@@ -1,6 +1,10 @@
 .power-generat-sec{
     margin-top: 20px;
 }
+.power-generat-sec .big-size-title span{
+    display: block;
+    line-height: inherit;
+}
 .power-generat-flex{
     display: flex;
     align-items: start;
@@ -76,7 +80,8 @@
 
 .our-history-slide{
     margin-top: 32px;
-    width: 1540px;
+    /*width: 1540px;*/
+    overflow: unset;
 }
 .our-history-slide .swiper-slide {
     width: auto;
@@ -96,6 +101,25 @@
     height: 3px;
     background: #081B4D;
     margin: 93px 0 90px;
+    position: relative;
+}
+
+.our-history-liner:before,
+.our-history-liner:after{
+    content: '';
+    position: absolute;
+    width: 3000px;
+    height: 100%;
+    background: inherit;
+    top: 0;
+}
+
+.our-history-liner:before{
+    right: 100%;
+}
+
+.our-history-liner:after{
+    left: 100%;
 }
 
 .our-history-box{
@@ -181,7 +205,7 @@
 
 
 .our-history-even .our-history-box:before{
-    top: -111px;
+    top: -106px;
     bottom: auto;
 
 }
@@ -196,7 +220,7 @@
 .philosophy-sec{
     margin: 90px auto 0;
     overflow: hidden;
-    max-width: 1920px;
+    /*max-width: 1920px;*/
     width: 100%;
 }
 .philosophy-title{
@@ -253,9 +277,13 @@
 }
 
 .production-slider{
-    width: 1738px;
+    overflow: unset;
 }
 
+.production-slider .swiper-slide{
+    width: 580px;
+    padding-right: 12px;
+}
 
 .bor-factory-sec{
     margin-top: 90px;
@@ -425,7 +453,7 @@
         max-width: 806px;
     }
     .production-slider {
-        width: 1600px;
+        /*width: 1600px;*/
     }
     .bor-factory-fon {
         padding: 30px 30px;
@@ -478,8 +506,8 @@
     .philosophy-title p, .philosophy-reflected p {
         font-size: 16px;
     }
-    .production-slider {
-        width: 1440px;
+    .production-slider .swiper-slide{
+        width: 500px;
     }
     .bor-factory-flex p {
         margin-top: 20px;
@@ -498,6 +526,7 @@
     }
     .our-mission-slider {
         margin-top: 50px;
+        overflow: unset;
     }
     .our-mission-photo {
         height: 500px;
@@ -556,9 +585,6 @@
     .production-cnt {
         margin-top: 57px;
     }
-    .production-slider {
-        width: 1200px;
-    }
     .bor-factory-info {
         margin-top: 0;
         max-width: 100%;
@@ -574,6 +600,7 @@
     }
     .our-mission-sec {
         margin-top: 58px;
+        overflow: hidden;
     }
     .our-mission-title {
         flex-direction: column;
@@ -610,8 +637,8 @@
     .production-next{
         display: none;
     }
-    .production-slider {
-        width: 900px;
+    .production-slider .swiper-slide{
+        width: 400px;
     }
     .bor-factory-sec {
         margin-top: 58px;
@@ -634,8 +661,10 @@
     .our-history-btn{
         display: none;
     }
-    .production-slider {
-        width: 600px;
+    .production-slider .swiper-slide{
+        width: 370px;
+        max-width: 95%;
+        padding-right: 6px;
     }
    .bor-factory-flex h2 {
         font-size: 24px;
@@ -663,5 +692,7 @@
         margin-top: 30px;
     }
 
-
+    .power-generat-sec .big-size-title span:not(:last-child){
+        margin-bottom: 19px;
+    }
 }

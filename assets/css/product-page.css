@@ -99,15 +99,16 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background: #ddd;
+    /*background: #ddd;*/
     margin-top: 26px;
+    position: relative;
 }
 .radialProgressBar .overlay {
     border-radius: 50%;
     width: 120px;
     height: 120px;
     margin: auto;
-    background: #fff;
+    /*background: #fff;*/
     text-align: center;
     display: flex;
     align-items: center;
@@ -118,16 +119,33 @@
     color: #1B41A3;
 }
 
-.progress-10 {
-    background-image: linear-gradient(92deg, #F6F7F6 50%, transparent 50%), linear-gradient(269deg, #1B41A3 50%, #F6F7F6 50%);
-}
-.progress-20 {
-    background-image: linear-gradient(-49deg, #1B41A3 50%, transparent 50%), linear-gradient(-89deg, #1B41A3 50%, #F6F7F6 50%);
+.radialProgressBar svg{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(180deg);
 }
 
-.progress-5 {
-    background-image: linear-gradient(90deg, #F6F7F6 50%, transparent 50%), linear-gradient(148deg, #1B41A3 50%, #F6F7F6 50%);
+.radialProgressBar path{
+    transition: all .7s;
 }
+
+.single-chamber-sec:not(.in-viewport) .radialProgressBar .progress__fill{
+    stroke-dashoffset: -411 !important;
+}
+
+/*.progress-10 {*/
+/*    background-image: linear-gradient(92deg, #F6F7F6 50%, transparent 50%), linear-gradient(269deg, #1B41A3 50%, #F6F7F6 50%);*/
+/*}*/
+/*.progress-20 {*/
+/*    background-image: linear-gradient(-49deg, #1B41A3 50%, transparent 50%), linear-gradient(-89deg, #1B41A3 50%, #F6F7F6 50%);*/
+/*}*/
+
+/*.progress-5 {*/
+/*    background-image: linear-gradient(90deg, #F6F7F6 50%, transparent 50%), linear-gradient(148deg, #1B41A3 50%, #F6F7F6 50%);*/
+/*}*/
 
 
 .energy-efficiency{

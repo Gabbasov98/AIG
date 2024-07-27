@@ -71,14 +71,63 @@ h3{
     transition: 1.6s;
 }
 
+.banner-main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.generations-slider2__img{
+    height: 100%;
+}
+
+.generations-slider2__img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.generations-slider2__img ._view2{
+    display: none;
+}
+
+.generations-slider2{
+    height: 100%;
+    overflow: hidden;
+}
+
+.generations-slider2 .swiper-slide:last-child:not(.swiper-slide-active, .swiper-slide-next) img {
+    animation: bgChange 9s forwards;
+}
+
+.generations-slider2 .swiper-slide-prev img {
+    animation: bgChange 9s forwards;
+}
+
+.generations-slider2 .swiper-slide-active img {
+    animation: bgChange 9s forwards;
+}
+
+@keyframes bgChange {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.15);
+    }
+}
 
 
 
 .anim-newSing{
     opacity: 0;
-    transform: translateY(120px);
+    transform: translateY(100px);
     transition-duration: 1.4s;
-
 }
 .anim-newSing.in-view{
     opacity: 1;
@@ -183,6 +232,7 @@ h3{
     width: 100%;
 }
 .href-see-all{
+    white-space: nowrap;
     display: flex;
     align-items: center;
     transition: 0.3s;
@@ -205,15 +255,23 @@ h3{
     margin-top: 26px;
     position: relative;
 }
+.completed-projects__cnt:not(.in-view){
+    transform: translateX(-200%);
+}
 .completed-projects-slider{
-    width: 2100px;
+    /*width: 2100px;*/
     border-radius: 20px;
     overflow: unset;
+}
+.completed-projects-slider .swiper-slide{
+    width: 704px;
+    padding-right: 14px;
 }
 .completed-projects-act .completed-projects-slider{
     overflow: unset;
 }
 .completed-projects-pic{
+    position: relative;
     display: flex;
     background-size: cover;
     background-repeat: no-repeat;
@@ -222,6 +280,7 @@ h3{
     border-radius: 20px;
     height: 460px;
     transition: 0.3s;
+    cursor: pointer;
 }
 .completed-projects-pic h3{
     color: #ffffff;
@@ -558,6 +617,7 @@ h3{
 
 .solutions-sec{
     margin-top: 105px;
+    overflow: hidden;
 }
 .solutions__tit{
     display: flex;
@@ -614,6 +674,9 @@ h3{
 .solutions__active{
     width: 42%;
 }
+.solutions__active>img{
+    /*transform: unset !important;*/
+}
 .solutions__box:after{
     content: "";
     position: absolute;
@@ -648,9 +711,11 @@ h3{
     z-index: 1;
     margin-top: 20px;
     transition: 0.4s;
+    transition-delay: .5s;
     max-width: 281px;
     width: 100%;
     height: 0;
+    opacity: 0;
     overflow: hidden;
 }
 
@@ -661,7 +726,9 @@ h3{
     text-align: left;
 }
 .solutions__active p{
-    height: 44px;
+    /*height: 44px;*/
+    height: auto;
+    opacity: 1;
 }
 .solutions__active .services__arrow{
     opacity: 1;
@@ -794,6 +861,7 @@ h3{
     background: unset;
     color: #ffffff;
     font-family: 'HelveticaNeue';
+    border-radius: 0;
 
 }
 .form-inp input::placeholder{
@@ -1019,7 +1087,7 @@ h3{
         bottom: 40px;
     }
     .completed-projects-slider {
-        width: 1270px;
+        /*width: 1270px;*/
     }
     .completed-projects-pic {
         padding: 50px 32px;
@@ -1101,8 +1169,9 @@ h3{
     .swiper-button-next:before {
         right: 16px;
     }
-    .completed-projects-slider {
-        width: 1150px;
+    .completed-projects-slider .swiper-slide{
+        width: 550px;
+        max-width: 95%;
     }
     .completed-projects-pic {
         padding: 36px 28px;
@@ -1185,7 +1254,7 @@ h3{
         height: 314px;
     }
     .completed-projects-slider {
-        width: 1000px;
+        /*width: 1000px;*/
     }
     h3 {
         font-size: 20px;
@@ -1226,6 +1295,7 @@ h3{
     }
     .services__flex {
         flex-wrap: wrap;
+        gap: 36px;
     }
     .services__picture{
         max-width: 390px;
@@ -1240,11 +1310,20 @@ h3{
         margin-top: 18px;
         display: block;
     }
+    .solutions__rel:not(.in-view){
+        transform: translateX(-200%);
+    }
+    .solutions__slider{
+        overflow: unset;
+        max-width: 600px;
+        margin-left: 0;
+        margin-right: auto;
+    }
     .solutions__box {
         height: 465px;
         padding: 20px 20px 60px;
         width: 100%;
-        max-width: 600px;
+        /*max-width: 600px;*/
         margin: 0 auto;
     }
     .solutions__box .services__arrow {
@@ -1287,10 +1366,13 @@ h3{
 
     .solutions__box h3 {
         text-align: left;
+        font-size: 24px;
+        line-height: 28px;
     }
     .solutions__box p {
         display: block;
         height: auto;
+        opacity: 1;
     }
     .publications__flex {
         gap: 35px;
@@ -1340,6 +1422,9 @@ h3{
     .architects__href ul li a {
         font-size: 14px;
         line-height: 18px;
+    }
+    .services__wrap{
+        gap: 26px;
     }
     .about-company__box {
         max-width: 370px;
@@ -1397,7 +1482,6 @@ h3{
     }
     .publications__box {
         width: 100%;
-        max-width: 400px;
     }
 }
 
@@ -1411,12 +1495,15 @@ h3{
         line-height: 22px;
     }
     .completed-projects-tit h3{
-        max-width: 182px;
+        /*max-width: 182px;*/
         width: 100%;
     }
 
-    .completed-projects-slider {
-        width: 682px;
+    .completed-projects-slider .swiper-slide{
+        /*width: 95%;*/
+        /*max-width: 400px;*/
+        margin-left: 0;
+        padding-right: 6px;
     }
     .completed-projects-pic {
         padding: 30px 20px;
@@ -1507,6 +1594,9 @@ h3{
     .publications__rel {
         margin-top: 19px;
     }
+    .publications__box{
+        max-width: 100%;
+    }
     .publications__box a {
         font-size: 20px;
         line-height: 24px;
@@ -1525,7 +1615,12 @@ h3{
     .completed-projects-pic:after {
         height: 209px;
     }
-
+    .generations-slider2__img ._view1{
+        display: none;
+    }
+    .generations-slider2__img ._view2{
+        display: block;
+    }
 }
 @media (max-width: 410px){
     .big-size-title {

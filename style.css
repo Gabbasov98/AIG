@@ -3,6 +3,7 @@
 @import "assets/css/magnific-popup.css";
 @import "assets/css/jquery.formstyler.css";
 @import "assets/css/jquery.formstyler.theme.css";
+@import "assets/css/fancybox.css";
 @import "assets/css/normalize.css";
 @import "assets/css/header.css";
 @import "assets/css/home.css";
@@ -16,5 +17,6 @@
 @import "assets/css/contacts.css";
 @import "assets/css/career-company.css";
 @import "assets/css/company.css";
+@import "assets/css/gallery-popup.css";
 
 

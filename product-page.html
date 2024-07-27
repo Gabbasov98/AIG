@@ -166,25 +166,37 @@
     </div>
 </section>
 
-<section class="single-chamber-sec anim-newSing">
+<section class="single-chamber-sec anim-style">
     <div class="container">
         <div class="single-chamber-flex">
             <div class="single-chamber-box">
                 <p>Солнцезащита</p>
                 <div class="radialProgressBar progress-10">
                     <div class="overlay">37%</div>
+                    <svg width="138" height="138" viewBox="0 0 138 138" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M69 134.5C105.175 134.5 134.5 105.175 134.5 69C134.5 32.8253 105.175 3.5 69 3.5C32.8253 3.5 3.5 32.8253 3.5 69C3.5 105.175 32.8253 134.5 69 134.5Z" stroke="#F6F7F6" stroke-width="7" />
+                        <path class="progress__fill" data-fill="37" stroke-linecap="round" d="M69 134.5C105.175 134.5 134.5 105.175 134.5 69C134.5 32.8253 105.175 3.5 69 3.5C32.8253 3.5 3.5 32.8253 3.5 69C3.5 105.175 32.8253 134.5 69 134.5Z" stroke="#1B41A3" stroke-width="7" />
+                    </svg>
                 </div>
             </div>
             <div class="single-chamber-box">
                 <p>Светопропускание</p>
                 <div class="radialProgressBar progress-20">
                     <div class="overlay">60%</div>
+                    <svg width="138" height="138" viewBox="0 0 138 138" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M69 134.5C105.175 134.5 134.5 105.175 134.5 69C134.5 32.8253 105.175 3.5 69 3.5C32.8253 3.5 3.5 32.8253 3.5 69C3.5 105.175 32.8253 134.5 69 134.5Z" stroke="#F6F7F6" stroke-width="7" />
+                        <path class="progress__fill" data-fill="60" stroke-linecap="round" d="M69 134.5C105.175 134.5 134.5 105.175 134.5 69C134.5 32.8253 105.175 3.5 69 3.5C32.8253 3.5 3.5 32.8253 3.5 69C3.5 105.175 32.8253 134.5 69 134.5Z" stroke="#1B41A3" stroke-width="7" />
+                    </svg>
                 </div>
             </div>
             <div class="single-chamber-box">
                 <p>Рефлективность</p>
                 <div class="radialProgressBar progress-5">
                     <div class="overlay">14%</div>
+                    <svg width="138" height="138" viewBox="0 0 138 138" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M69 134.5C105.175 134.5 134.5 105.175 134.5 69C134.5 32.8253 105.175 3.5 69 3.5C32.8253 3.5 3.5 32.8253 3.5 69C3.5 105.175 32.8253 134.5 69 134.5Z" stroke="#F6F7F6" stroke-width="7" />
+                        <path class="progress__fill" data-fill="14" stroke-linecap="round" d="M69 134.5C105.175 134.5 134.5 105.175 134.5 69C134.5 32.8253 105.175 3.5 69 3.5C32.8253 3.5 3.5 32.8253 3.5 69C3.5 105.175 32.8253 134.5 69 134.5Z" stroke="#1B41A3" stroke-width="7" />
+                    </svg>
                 </div>
             </div>
             <div class="single-chamber-box">
@@ -264,7 +276,40 @@
 </section>
 
 
-
+<div class="gallery-popup">
+    <div class="gallery-popup__bg _close-gallery-popup"></div>
+    <div class="gallery-popup__dialog">
+        <button class="gallery-popup__close _close-gallery-popup">
+            <img src="assets/img/close.svg" alt="">
+        </button>
+        <div class="gallery-slider slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="gallery-slider__img" src="./assets/img/gallery10.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="gallery-slider__img" src="./assets/img/gallery10.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev">
+                <img src="./assets/img/icons/arrow-white.svg" alt="icon">
+            </div>
+            <div class="swiper-button-next">
+                <img src="./assets/img/icons/arrow-white.svg" alt="icon">
+            </div>
+        </div>
+        <div class="gallery-popup__content">
+            <div class="gallery-popup__title">
+                Лахта Центр Санкт-Петербург
+            </div>
+            <a href="" class="gallery-popup__link">
+                Смотреть проект
+            </a>
+        </div>
+    </div>
+</div>
 
 
 
@@ -278,7 +323,7 @@
             </a>
         </div>
         <div class="interested-rel anim-newSing">
-            <div class="swiper interested-slider">
+            <div class="swiper interested-slider interested-slider--projects">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="catalog__box">
@@ -476,6 +521,7 @@
 <script src="assets/js/jquery.mask.js"></script>
 <script src="assets/js/jquery.formstyler.min.js"></script>
 <script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/fancybox.umd.js"></script>
 <script src="assets/js/script.js"></script>
 
 </body>

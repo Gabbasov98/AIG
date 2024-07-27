@@ -221,9 +221,23 @@
     transition: 0.3s;
     cursor: pointer;
 }
+.catalog__menu ul li a{
+    color: inherit;
+}
+.catalog__menu ul ._active,
 .catalog__menu ul .catalog-menu-href{
     background: #EAF0FF;
     color: #081B4D;
+}
+.tab-content{
+    display: none;
+}
+.tab-content._active{
+    display: block;
+}
+.tab-content._active .anim-newSing{
+    opacity: 1;
+    transform: translate(0);
 }
 
 .catalog__wrap{

@@ -99,7 +99,18 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    z-index: 3;
+    position: relative;
 }
+
+.architectural-title .project-cnt-drop{
+    width: 225px;
+}
+
+.architectural-title .project-checked{
+    max-width: 185px;
+}
+
 .architectural-title h3{
     font-family: 'HelveticaNeue';
     font-weight: 400;
@@ -124,6 +135,16 @@
     max-width: 320px;
     width: 100%;
     margin-top: 40px;
+}
+.architectural-info{
+    border-top: 1px solid rgba(0,0,0,0.10);
+    padding-top: 40px;
+}
+.architectural-info:nth-child(1),
+.architectural-info:nth-child(2),
+.architectural-info:nth-child(3){
+    padding-top: 0;
+    border-top: none;
 }
 .architectural-info h4{
     color: #20315E;
@@ -162,7 +183,6 @@
 
 .requisites-sec{
     margin-top: 90px;
-    margin-bottom: 90px;
 }
 .requisites-info{
     background: #F7F7F7;
@@ -214,7 +234,11 @@
         max-width: 585px;
     }
     .architectural-info {
-        max-width: 330px;
+        max-width: calc(50% - 15px);
+    }
+    .architectural-info:nth-child(3) {
+        padding-top: 40px;
+        border-top: 1px solid rgba(0,0,0,0.10);
     }
     .requisites-info h3 {
         max-width: 220px;
@@ -241,9 +265,10 @@
         margin: 0;
     }
     .architectural-info{
-        border-top: 1px solid rgba(0, 0, 0, 0.10);
+        border-top: 1px solid rgba(0, 0, 0, 0.10) !important;
         margin-top: 20px;
-        padding-top: 30px;
+        padding-top: 30px !important;
+        max-width: 100%;
     }
     .requisites-info {
         padding: 24px;
@@ -256,5 +281,28 @@
     }
     .architectural-sec {
         margin-top: 26px;
+    }
+}
+
+
+@media (max-width: 680px){
+    .architectural-title{
+        z-index: 1;
+    }
+
+    .architectural-wrap{
+        position: relative;
+        z-index: 4;
+    }
+
+    .architectural-wrap._z-minus{
+        position: static;
+    }
+}
+
+
+@media (max-width: 570px){
+    .architectural-sec h3{
+        font-size: 22px;
     }
 }
