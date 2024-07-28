@@ -310,6 +310,7 @@
     .project-glass-sec{
         position: relative;
         z-index: 3;
+        background-color: #fff;
     }
     .project-glass-sec._z-minus{
         z-index: 1;
@@ -324,8 +325,8 @@
         margin-top: 50px;
         padding-left: 20px;
         padding-right: 20px;
-        padding-bottom: 350px;
-        margin-bottom: -350px;
+        padding-bottom: 440px;
+        margin-bottom: -440px;
         margin-left: -20px;
         overflow-x: auto;
         width: calc(100% + 40px);

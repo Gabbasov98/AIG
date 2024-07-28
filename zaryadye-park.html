@@ -163,31 +163,31 @@
     <div class="container">
         <h3>ФОТОГАЛЕРЕЯ</h3>
         <div class="photo-gallery__wrap">
-            <a href="./assets/img/gallery-1.jpg" data-fancybox class="photo-gallery__box">
+            <a href="./assets/img/gallery-1.jpg" data-fancybox="gallery" class="photo-gallery__box">
                 <img src="./assets/img/gallery-1.jpg" alt="image">
             </a>
-            <a href="./assets/img/gallery-2.jpg" data-fancybox class="photo-gallery__box">
+            <a href="./assets/img/gallery-2.jpg" data-fancybox="gallery" class="photo-gallery__box">
                 <img src="./assets/img/gallery-2.jpg" alt="image">
             </a>
-            <a href="./assets/img/gallery-3.jpg" data-fancybox class="photo-gallery__box">
+            <a href="./assets/img/gallery-3.jpg" data-fancybox="gallery" class="photo-gallery__box">
                 <img src="./assets/img/gallery-3.jpg" alt="image">
             </a>
-            <a href="./assets/img/gallery-4.jpg" data-fancybox class="photo-gallery__box">
+            <a href="./assets/img/gallery-4.jpg" data-fancybox="gallery" class="photo-gallery__box">
                 <img src="./assets/img/gallery-4.jpg" alt="image">
             </a>
-            <a href="./assets/img/gallery-5.jpg" data-fancybox class="photo-gallery__box">
+            <a href="./assets/img/gallery-5.jpg" data-fancybox="gallery" class="photo-gallery__box">
                 <img src="./assets/img/gallery-5.jpg" alt="image">
             </a>
-            <a href="./assets/img/gallery-6.jpg" data-fancybox class="photo-gallery__box">
+            <a href="./assets/img/gallery-6.jpg" data-fancybox="gallery" class="photo-gallery__box">
                 <img src="./assets/img/gallery-6.jpg" alt="image">
             </a>
-            <a href="./assets/img/gallery-7.jpg" data-fancybox class="photo-gallery__box">
+            <a href="./assets/img/gallery-7.jpg" data-fancybox="gallery" class="photo-gallery__box">
                 <img src="./assets/img/gallery-7.jpg" alt="image">
             </a>
-            <a href="./assets/img/gallery-8.jpg" data-fancybox class="photo-gallery__box">
+            <a href="./assets/img/gallery-8.jpg" data-fancybox="gallery" class="photo-gallery__box">
                 <img src="./assets/img/gallery-8.jpg" alt="image">
             </a>
-            <a href="./assets/img/gallery-9.jpg" data-fancybox class="photo-gallery__box">
+            <a href="./assets/img/gallery-9.jpg" data-fancybox="gallery" class="photo-gallery__box">
                 <img src="./assets/img/gallery-9.jpg" alt="image">
             </a>
         </div>
@@ -209,33 +209,18 @@
             <div class="swiper completed-projects-slider">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="completed-projects-pic" style="background-image: url('./assets/img/lakhta.jpg')">
+                        <div data-modal-id="galleryModal" data-id="0" class="completed-projects-pic" style="background-image: url('./assets/img/lakhta.jpg')">
                             <h3>Лахта Центр Санкт-Петербург</h3>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="completed-projects-pic" style="background-image: url('./assets/img/lakhta2.jpg')">
+                        <div data-modal-id="galleryModal" data-id="1" class="completed-projects-pic" style="background-image: url('./assets/img/lakhta2.jpg')">
                             <h3>МФК «Capital Towers»</h3>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="completed-projects-pic" style="background-image: url('./assets/img/lakhta.jpg')">
+                        <div data-modal-id="galleryModal" data-id="2" class="completed-projects-pic" style="background-image: url('./assets/img/lakhta.jpg')">
                             <h3>Лахта Центр Санкт-Петербург</h3>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="completed-projects-pic" style="background-image: url('./assets/img/lakhta2.jpg')">
-                            <h3>МФК «Capital Towers»</h3>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="completed-projects-pic" style="background-image: url('./assets/img/lakhta.jpg')">
-                            <h3>Лахта Центр Санкт-Петербург</h3>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="completed-projects-pic" style="background-image: url('./assets/img/lakhta2.jpg')">
-                            <h3>МФК «Capital Towers»</h3>
                         </div>
                     </div>
                 </div>
@@ -250,6 +235,65 @@
     </div>
 </section>
 
+<div class="gallery-popup" id="galleryModal">
+    <div class="gallery-popup__bg _close-gallery-popup"></div>
+    <div class="gallery-popup__dialog">
+        <button class="gallery-popup__close _close-gallery-popup">
+            <img src="assets/img/close.svg" alt="">
+        </button>
+        <div class="gallery-slider slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="gallery-slider__img">
+                            <img src="./assets/img/gallery10.jpg" alt="">
+                        </div>
+                        <div class="gallery-popup__content">
+                            <div class="gallery-popup__title">
+                                Лахта Центр Санкт-Петербург
+                            </div>
+                            <a href="" class="gallery-popup__link">
+                                Смотреть проект
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-slider__img">
+                            <img src="./assets/img/lakhta2.jpg" alt="">
+                        </div>
+                        <div class="gallery-popup__content">
+                            <div class="gallery-popup__title">
+                                МФК «Capital Towers»
+                            </div>
+                            <a href="" class="gallery-popup__link">
+                                Смотреть проект
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-slider__img">
+                            <img src="./assets/img/gallery10.jpg" alt="">
+                        </div>
+                        <div class="gallery-popup__content">
+                            <div class="gallery-popup__title">
+                                Лахта Центр Санкт-Петербург
+                            </div>
+                            <a href="" class="gallery-popup__link">
+                                Смотреть проект
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev">
+                <img src="./assets/img/icons/arrow-white.svg" alt="icon">
+            </div>
+            <div class="swiper-button-next">
+                <img src="./assets/img/icons/arrow-white.svg" alt="icon">
+            </div>
+        </div>
+    </div>
+</div>
 
 <footer>
     <div class="container">

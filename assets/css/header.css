@@ -426,7 +426,8 @@ header.in-viewport .header__main {
         padding: 105px 0 25px;
     }
     .menu-href ul {
-        margin-top: 16px;
+        margin-top: 0;
+        padding-top: 16px;
     }
     .menu-href ul li {
         margin-top: 12px;
@@ -440,6 +441,11 @@ header.in-viewport .header__main {
         display: none;
     }
 
+}
+@media (min-width: 571px){
+    .menu-href ul{
+        display: block !important;
+    }
 }
 @media (max-width: 570px){
     .menu-href{
@@ -497,7 +503,7 @@ header.in-viewport .header__main {
         gap: 0;
     }
     .menu-href-active ul{
-        display: block;
+        /*display: block;*/
     }
     .menu-href-active h3:after{
         transform: rotate(-45deg);

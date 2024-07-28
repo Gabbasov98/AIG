@@ -423,6 +423,13 @@
 }
 
 
+@media screen and (min-width: 577px){
+    .this-glass-sec h3 br{
+        display: none;
+    }
+}
+
+
 @media (min-width: 1201px){
     .interested-slider--projects{
         overflow: hidden;

@@ -239,7 +239,10 @@
     opacity: 1;
     transform: translate(0);
 }
-
+.catalog__menu,
+.catalog-min{
+    transition-delay: .3s;
+}
 .catalog__wrap{
     margin-top: 22px;
     display: flex;

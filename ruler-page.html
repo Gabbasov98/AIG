@@ -374,24 +374,24 @@
 </section>
 <section class="this-glass-sec anim-newSing">
     <div class="container">
-        <h3>ПРОЕКТЫ С ЭТИМ СТЕКЛОМ</h3>
+        <h3>ПРОЕКТЫ <br> С ЭТИМ СТЕКЛОМ</h3>
         <div class="tab-content _active _tab1">
             <div class="this-glass__cnt">
                 <div class="swiper this-glass-slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="this-glass-photo" style="background-image: url('./assets/img/shutterstock1.jpg')">
+                            <div data-modal-id="galleryModal" data-id="0" class="this-glass-photo" style="background-image: url('./assets/img/shutterstock1.jpg')">
                                 <h4>Стеклянная кора и Большой амфитеатр,
                                     парк Зарядье</h4>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="this-glass-photo" style="background-image: url('./assets/img/shutterstock2.jpg')">
+                            <div data-modal-id="galleryModal" data-id="1" class="this-glass-photo" style="background-image: url('./assets/img/shutterstock2.jpg')">
                                 <h4>Инженерный центр «Мосгаз», Москва</h4>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="this-glass-photo" style="background-image: url('./assets/img/shutterstock2.jpg')">
+                            <div data-modal-id="galleryModal" data-id="2" class="this-glass-photo" style="background-image: url('./assets/img/shutterstock2.jpg')">
                                 <h4>Инженерный центр «Мосгаз», Москва</h4>
                             </div>
                         </div>
@@ -410,18 +410,18 @@
                 <div class="swiper this-glass-slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="this-glass-photo" style="background-image: url('./assets/img/shutterstock2.jpg')">
+                            <div data-modal-id="galleryModal2" data-id="0" class="this-glass-photo" style="background-image: url('./assets/img/shutterstock2.jpg')">
+                                <h4>Инженерный центр «Мосгаз», Москва</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div data-modal-id="galleryModal2" data-id="1" class="this-glass-photo" style="background-image: url('./assets/img/shutterstock1.jpg')">
                                 <h4>Стеклянная кора и Большой амфитеатр,
                                     парк Зарядье</h4>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="this-glass-photo" style="background-image: url('./assets/img/shutterstock1.jpg')">
-                                <h4>Инженерный центр «Мосгаз», Москва</h4>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="this-glass-photo" style="background-image: url('./assets/img/shutterstock1.jpg')">
+                            <div data-modal-id="galleryModal2" data-id="2" class="this-glass-photo" style="background-image: url('./assets/img/shutterstock2.jpg')">
                                 <h4>Инженерный центр «Мосгаз», Москва</h4>
                             </div>
                         </div>
@@ -438,7 +438,7 @@
     </div>
 </section>
 
-<div class="gallery-popup">
+<div class="gallery-popup" id="galleryModal">
     <div class="gallery-popup__bg _close-gallery-popup"></div>
     <div class="gallery-popup__dialog">
         <button class="gallery-popup__close _close-gallery-popup">
@@ -448,10 +448,44 @@
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img class="gallery-slider__img" src="./assets/img/gallery10.jpg" alt="">
+                        <div class="gallery-slider__img">
+                            <img src="./assets/img/shutterstock1.jpg" alt="">
+                        </div>
+                        <div class="gallery-popup__content">
+                            <div class="gallery-popup__title">
+                                Стеклянная кора и Большой амфитеатр,
+                                парк Зарядье
+                            </div>
+                            <a href="" class="gallery-popup__link">
+                                Смотреть проект
+                            </a>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <img class="gallery-slider__img" src="./assets/img/gallery10.jpg" alt="">
+                        <div class="gallery-slider__img">
+                            <img src="./assets/img/shutterstock2.jpg" alt="">
+                        </div>
+                        <div class="gallery-popup__content">
+                            <div class="gallery-popup__title">
+                                Инженерный центр «Мосгаз», Москва
+                            </div>
+                            <a href="" class="gallery-popup__link">
+                                Смотреть проект
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-slider__img">
+                            <img src="./assets/img/shutterstock2.jpg" alt="">
+                        </div>
+                        <div class="gallery-popup__content">
+                            <div class="gallery-popup__title">
+                                Инженерный центр «Мосгаз», Москва
+                            </div>
+                            <a href="" class="gallery-popup__link">
+                                Смотреть проект
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -462,13 +496,65 @@
                 <img src="./assets/img/icons/arrow-white.svg" alt="icon">
             </div>
         </div>
-        <div class="gallery-popup__content">
-            <div class="gallery-popup__title">
-                Лахта Центр Санкт-Петербург
+    </div>
+</div>
+<div class="gallery-popup" id="galleryModal2">
+    <div class="gallery-popup__bg _close-gallery-popup"></div>
+    <div class="gallery-popup__dialog">
+        <button class="gallery-popup__close _close-gallery-popup">
+            <img src="assets/img/close.svg" alt="">
+        </button>
+        <div class="gallery-slider slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="gallery-slider__img">
+                            <img src="./assets/img/shutterstock2.jpg" alt="">
+                        </div>
+                        <div class="gallery-popup__content">
+                            <div class="gallery-popup__title">
+                                Инженерный центр «Мосгаз», Москва
+                            </div>
+                            <a href="" class="gallery-popup__link">
+                                Смотреть проект
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-slider__img">
+                            <img src="./assets/img/shutterstock1.jpg" alt="">
+                        </div>
+                        <div class="gallery-popup__content">
+                            <div class="gallery-popup__title">
+                                Стеклянная кора и Большой амфитеатр,
+                                парк Зарядье
+                            </div>
+                            <a href="" class="gallery-popup__link">
+                                Смотреть проект
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-slider__img">
+                            <img src="./assets/img/shutterstock2.jpg" alt="">
+                        </div>
+                        <div class="gallery-popup__content">
+                            <div class="gallery-popup__title">
+                                Инженерный центр «Мосгаз», Москва
+                            </div>
+                            <a href="" class="gallery-popup__link">
+                                Смотреть проект
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <a href="" class="gallery-popup__link">
-                Смотреть проект
-            </a>
+            <div class="swiper-button-prev">
+                <img src="./assets/img/icons/arrow-white.svg" alt="icon">
+            </div>
+            <div class="swiper-button-next">
+                <img src="./assets/img/icons/arrow-white.svg" alt="icon">
+            </div>
         </div>
     </div>
 </div>
