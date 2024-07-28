@@ -13,25 +13,26 @@ $('.menu-href h3').on('click', function (e) {
 let indexPage = document.querySelector(".index-page")
 
 $(document).ready(function () {
-    if(!indexPage){
-        setTimeout(function () {
-            $(".loader").removeClass("_open")
-            $("header").addClass("in-viewport");
-            $(".anim-style").addClass("in-viewport");
-            $(".products-line-sec").addClass("in-view");
-            $(".single-chamber-sec").addClass("in-view");
+    setTimeout(function () {
+        // $(".loader").removeClass("_open")
+        $("header").addClass("in-viewport");
+        $(".anim-style").addClass("in-viewport");
+        $(".products-line-sec").addClass("in-view");
+        $(".single-chamber-sec").addClass("in-view");
 
-        }, 500);
-    } else{
-        setTimeout(function () {
-            $(".loader").removeClass("_open")
-            $("header").addClass("in-viewport");
-            $(".anim-style").addClass("in-viewport");
-            $(".products-line-sec").addClass("in-view");
-            $(".single-chamber-sec").addClass("in-view");
-
-        }, 5000);
-    }
+    }, 500);
+    // if(!indexPage){
+    //
+    // } else{
+    //     setTimeout(function () {
+    //         $(".loader").removeClass("_open")
+    //         $("header").addClass("in-viewport");
+    //         $(".anim-style").addClass("in-viewport");
+    //         $(".products-line-sec").addClass("in-view");
+    //         $(".single-chamber-sec").addClass("in-view");
+    //
+    //     }, 5000);
+    // }
 
 });
 
@@ -54,62 +55,62 @@ $(document).ready(function () {
 
 
 
-let $animation_element = $('.anim-newSing');
-let $window = $(window);
-function check_if_in_view() {
-    let window_height = $window.height();
-    let window_top_position = $window.scrollTop();
-    let window_bottom_position = ( window_height + window_top_position);
-    $.each($animation_element, function() {
-        let $element = $(this);
-        let element_height = $element.outerHeight();
-        let element_top_position = $element.offset().top;
-        let element_bottom_position = (element_height + element_top_position);
-        if((element_bottom_position >= window_top_position * .9) &&
-            (element_top_position <= window_bottom_position * 1.1)) {
-            $element.addClass('in-view');
-        }
-    });
-}
-$window.on('scroll resize', check_if_in_view);
-$window.trigger('scroll');
-
-// let animatedElements = document.querySelectorAll('.anim-newSing');
-//
-// let Visible = function(target) {
-//     // Все позиции элемента
-//     let targetPosition = {
-//             top: window.pageYOffset + target.getBoundingClientRect().top,
-//             left: window.pageXOffset + target.getBoundingClientRect().left,
-//             right: window.pageXOffset + target.getBoundingClientRect().right,
-//             bottom: window.pageYOffset + target.getBoundingClientRect().bottom
-//         },
-//         // Получаем позиции окна
-//         windowPosition = {
-//             top: window.pageYOffset,
-//             left: window.pageXOffset,
-//             right: window.pageXOffset + document.documentElement.clientWidth,
-//             bottom: window.pageYOffset + document.documentElement.clientHeight
-//         };
-//
-//     if (targetPosition.bottom - 40 > windowPosition.top &&
-//         targetPosition.top + 40 < windowPosition.bottom) {
-//         target.classList.add("in-view")
-//     } else {
-//
-//     }
-// };
-//
-// window.addEventListener('scroll', function() {
-//     initAnimElements()
-// });
-// initAnimElements()
-//
-// function initAnimElements() {
-//     animatedElements.forEach(el => {
-//         Visible(el)
-//     })
+// let $animation_element = $('.anim-newSing');
+// let $window = $(window);
+// function check_if_in_view() {
+//     let window_height = $window.height();
+//     let window_top_position = $window.scrollTop();
+//     let window_bottom_position = ( window_height + window_top_position);
+//     $.each($animation_element, function() {
+//         let $element = $(this);
+//         let element_height = $element.outerHeight();
+//         let element_top_position = $element.offset().top;
+//         let element_bottom_position = (element_height + element_top_position);
+//         if((element_bottom_position >= window_top_position * .9) &&
+//             (element_top_position <= window_bottom_position * 1.1)) {
+//             $element.addClass('in-view');
+//         }
+//     });
 // }
+// $window.on('scroll resize', check_if_in_view);
+// $window.trigger('scroll');
+
+let animatedElements = document.querySelectorAll('.anim-newSing');
+
+let Visible = function(target) {
+    // Все позиции элемента
+    let targetPosition = {
+            top: window.pageYOffset + target.getBoundingClientRect().top,
+            left: window.pageXOffset + target.getBoundingClientRect().left,
+            right: window.pageXOffset + target.getBoundingClientRect().right,
+            bottom: window.pageYOffset + target.getBoundingClientRect().bottom
+        },
+        // Получаем позиции окна
+        windowPosition = {
+            top: window.pageYOffset,
+            left: window.pageXOffset,
+            right: window.pageXOffset + document.documentElement.clientWidth,
+            bottom: window.pageYOffset + document.documentElement.clientHeight
+        };
+
+    if (targetPosition.bottom - 40 > windowPosition.top &&
+        targetPosition.top + 40 < windowPosition.bottom) {
+        target.classList.add("in-view")
+    } else {
+
+    }
+};
+
+window.addEventListener('scroll', function() {
+    initAnimElements()
+});
+initAnimElements()
+
+function initAnimElements() {
+    animatedElements.forEach(el => {
+        Visible(el)
+    })
+}
 
 
 

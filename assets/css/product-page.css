@@ -132,7 +132,7 @@
     transition: all .7s;
 }
 
-.single-chamber-sec:not(.in-viewport) .radialProgressBar .progress__fill{
+.single-chamber-sec:not(.in-view) .radialProgressBar .progress__fill{
     stroke-dashoffset: -411 !important;
 }
 

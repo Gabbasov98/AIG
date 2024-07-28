@@ -37,34 +37,30 @@
 }
 
 
-
-
-
-
-
-
-
 @font-face {
     font-family: 'HelveticaNeue';
-    src: url('HelveticaNeue-Bold.otf') format('truetype');
+    src: url('HelveticaNeueCyr-Bold.woff2') format('woff2'),
+    url('HelveticaNeueCyr-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'HelveticaNeue';
-    src: url('HelveticaNeue-Medium.otf') format('truetype');
+    src: url('HelveticaNeueCyr-Medium.woff2') format('woff2'),
+    url('HelveticaNeueCyr-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
 
-
-
 @font-face {
     font-family: 'HelveticaNeue';
-    src: url('HelveticaNeue-Roman.otf') format('truetype');
-    font-weight: normal;
+    src: url('HelveticaNeueCyr-Roman.woff2') format('woff2'),
+    url('HelveticaNeueCyr-Roman.woff') format('woff');
+    font-weight: 400;
     font-style: normal;
 }
+
+
 
 

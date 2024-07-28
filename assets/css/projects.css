@@ -193,6 +193,7 @@
     height: 16px;
     position: relative;
     cursor: pointer;
+    flex-shrink: 0;
 }
 .project-cnt-close span{
     display: block;
