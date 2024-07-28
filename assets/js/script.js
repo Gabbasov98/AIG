@@ -16,6 +16,7 @@ $(document).ready(function () {
     setTimeout(function () {
         // $(".loader").removeClass("_open")
         $("header").addClass("in-viewport");
+        $(".banner-main").addClass("in-viewport");
         $(".anim-style").addClass("in-viewport");
         $(".products-line-sec").addClass("in-view");
         $(".single-chamber-sec").addClass("in-view");

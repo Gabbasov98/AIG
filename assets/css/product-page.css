@@ -130,9 +130,15 @@
 
 .radialProgressBar path{
     transition: all .7s;
+    transition-delay: .2s;
 }
 
-.single-chamber-sec:not(.in-view) .radialProgressBar .progress__fill{
+.radialProgressBar:not(.in-view){
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+}
+
+.radialProgressBar:not(.in-view) .progress__fill{
     stroke-dashoffset: -411 !important;
 }
 

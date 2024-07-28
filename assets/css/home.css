@@ -47,13 +47,17 @@ h3{
 }
 
 .anim-style{
-    transform: translateY(100px);
+    transform: translateY(50px);
     transition-duration: 1.0s;
     opacity: 0;
 }
 .anim-style.in-viewport{
     transform: translateY(0);
     opacity: 1;
+}
+
+.generations__info .anim-style{
+    transition-delay: .4s;
 }
 
 .generations__info .anim-style:first-child{
@@ -101,6 +105,12 @@ h3{
 .generations-slider2{
     height: 100%;
     overflow: hidden;
+    opacity: 0;
+    transition: all .4s;
+}
+
+.banner-main.in-viewport .generations-slider2{
+    opacity: 1;
 }
 
 .generations-slider2 .swiper-slide:last-child:not(.swiper-slide-active, .swiper-slide-next) img {
@@ -264,6 +274,9 @@ h3{
 }
 .completed-projects__cnt{
     margin-top: 26px;
+    position: relative;
+}
+.completed-projects__cnt .container{
     position: relative;
 }
 .completed-projects__cnt:not(.in-view){
@@ -1321,9 +1334,10 @@ h3{
     .solutions__rel{
         margin-top: 18px;
         display: block;
+        transition-delay: .2s;
     }
     .solutions__rel:not(.in-view){
-        transform: translateX(-200%);
+        transform: translateX(110%);
     }
     .solutions__slider{
         overflow: unset;
