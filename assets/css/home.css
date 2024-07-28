@@ -276,7 +276,7 @@ h3{
     margin-top: 26px;
     position: relative;
 }
-.completed-projects__cnt .container{
+.completed-projects__cnt-inner{
     position: relative;
 }
 .completed-projects__cnt:not(.in-view){
