@@ -440,6 +440,12 @@ $(document).ready(function () {
     $('.catalog-tab-click').on('click', function () {
         changeActiveClassWithClick(this, 'catalog__menu', 'catalog-menu-href')
         changeCaseBlock(this, 'catalog__menu', 'catalog-min', 'catalog-menu-href', 'catalog-tab-click');
+
+        document.querySelector(".catalog-tab-click.catalog-menu-href").scrollIntoView({
+            behavior: "smooth",
+            inline: "center",
+            block: 'nearest',
+        })
     })
 
 

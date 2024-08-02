@@ -406,6 +406,18 @@ header.in-viewport .header__main {
     .header__search{
         display: none;
     }
+    header{
+        padding: 0;
+    }
+    header>.container{
+        padding: 0;
+    }
+    .header-active .header__main{
+        background-color: #fff;
+    }
+    .header__main{
+        padding: 24px 20px;
+    }
 
 }
 @media (max-width: 760px){
@@ -450,6 +462,10 @@ header.in-viewport .header__main {
 @media (max-width: 570px){
     .menu-href{
         width: 100%;
+    }
+    .header__main{
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .houses-cottages {
         margin: 19px 0 21px;
