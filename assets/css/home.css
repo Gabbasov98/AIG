@@ -446,6 +446,18 @@ h3{
     background-attachment: fixed;
     background-position: center;
     border-radius: 20px;
+    position: relative;
+    background-color: transparent;
+}
+.about-company__box-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    z-index: -1;
 }
 .about-company__box{
     padding: 35px 28px;
