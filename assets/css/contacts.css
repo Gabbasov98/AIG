@@ -126,8 +126,8 @@
 .architectural-wrap{
     border-top: 1px solid rgba(0,0,0,0.10);
     margin-top: 26px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3,320px);
     justify-content: space-between;
     gap: 0 30px;
 }
@@ -233,8 +233,8 @@
     .contact-main-office {
         max-width: 585px;
     }
-    .architectural-info {
-        max-width: calc(50% - 15px);
+    .architectural-wrap{
+        grid-template-columns: repeat(2,calc(50% - 15px));
     }
     .architectural-info:nth-child(3) {
         padding-top: 40px;
@@ -263,6 +263,7 @@
     .architectural-wrap {
         border-top: unset;
         margin: 0;
+        grid-template-columns: 100%;
     }
     .architectural-info{
         border-top: 1px solid rgba(0, 0, 0, 0.10) !important;

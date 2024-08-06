@@ -58,7 +58,7 @@ header.in-viewport .header__main {
     border-radius: 50px;
     padding: 12px 22px;
     background: unset;
-    color: rgba(130, 150, 173, 1);
+    color: rgba(8, 27, 77, 1);
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
@@ -376,6 +376,9 @@ header.in-viewport .header__main {
     }
 }
 @media (max-width: 1199px){
+    .body_fix{
+        overflow: hidden;
+    }
     header {
         padding: 24px 0;
     }
@@ -393,14 +396,16 @@ header.in-viewport .header__main {
         /*top: 90px;*/
         padding: 145px 0 55px;
         overflow-y: auto;
-        height: 90vh;
+        height: 100vh;
     }
 
     .menu-fixed__fl {
         flex-wrap: wrap;
         gap: 25px 30px;
     }
-
+    .bx-core .menu-fixed{
+        height: calc(100vh - 147px);
+    }
 }
 @media (max-width: 1020px){
     .header__search{

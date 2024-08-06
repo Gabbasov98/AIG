@@ -1,5 +1,11 @@
+@media (min-width: 1200px){
+    .career-applicat{
+        grid-template-columns: repeat(4,24%) !important;
+    }
+}
+
 .career-applicat .application__box {
-    max-width: 24%;
+    max-width: 100%;
 }
 
 .open-vacancies{
@@ -106,8 +112,10 @@
 
 
 @media (max-width: 1199px){
-    .career-applicat .application__box {
-        max-width: 32%;
+    @media (min-width: 1200px){
+        .career-applicat{
+            grid-template-columns: repeat(3,32%) !important;
+        }
     }
     .show-reel-fon {
         height: 580px;
@@ -119,9 +127,6 @@
     }
 }
 @media (max-width: 1020px){
-    .career-applicat .application__box {
-        max-width: 47%;
-    }
     .show-reel-fon {
         height: 500px;
         padding: 25px;
