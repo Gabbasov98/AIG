@@ -28,6 +28,14 @@
     margin-left: 0;
 }
 
+.bread-caps ul li:last-child{
+    pointer-events: none;
+}
+
+.bread-caps ul li:last-child a{
+    color: #666;
+}
+
 .bread-caps ul li:first-child a:before{
     display: none;
 }

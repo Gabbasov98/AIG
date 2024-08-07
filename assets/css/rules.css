@@ -1,6 +1,6 @@
 .rules-text{
     margin-top: 50px;
-    max-width: 860px;
+    max-width: 862px;
     color: #555;
 }
 
@@ -10,9 +10,11 @@
     line-height: 140%;
     color: inherit;
     margin-bottom: 32px;
+    font-family: 'HelveticaNeue', sans-serif;
 }
 
-.rules-text p,li{
+.rules-text p,
+.rules-text li{
     font-size: 20px;
     line-height: 140%;
     margin-bottom: 24px;
@@ -58,7 +60,8 @@
         line-height: 150%;
     }
 
-    .rules-text p,li{
+    .rules-text p,
+    .rules-text li{
         font-size: 16px;
         line-height: 150%;
     }

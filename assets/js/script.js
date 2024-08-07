@@ -662,3 +662,33 @@ function setProgressFill(el,progressNum) {
     let drawLength = pathLength * (progressNum / 100);
     el.style.strokeDashoffset = drawLength - pathLength
 }
+
+$(".solution-card2").click(function () {
+    let id = $(this).attr("data-modal-id")
+
+    $("body").addClass("fixed-body2")
+    $(`#${id}`).addClass("_open")
+})
+
+$("._close-solution-modal").click(function () {
+    $("body").removeClass("fixed-body2")
+    $(".solution-modal").removeClass("_open")
+})
+
+$(".open-search").click(function () {
+    $(".header__search").addClass("_open")
+})
+
+$(".header__search-close").click(function () {
+    $(".header__search").removeClass("_open")
+})
+
+$(document).mouseup( function(e){
+    let div = $( ".header__search" );
+    if ( !div.is(e.target)
+        && div.has(e.target).length === 0 ) {
+        if($(div).hasClass('_open')){
+            $(div).removeClass('_open');
+        }
+    }
+});

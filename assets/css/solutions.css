@@ -20,6 +20,7 @@
     transform: scale(1.1);
 }
 
+.video-card__img:after,
 .solution-main__info:after,
 .solution-card:after{
     content: '';

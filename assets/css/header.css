@@ -354,6 +354,7 @@ header.in-viewport .header__main {
 .body_fix {
     width: 100%;
 }
+.header__search-close,
 .open-search{
     display: none;
 }
@@ -454,10 +455,60 @@ header.in-viewport .header__main {
         cursor: pointer;
         margin-right: 20px;
     }
+    .open-search svg{
+        width: 20px;
+        height: auto;
+    }
     .open-menu small{
         display: none;
     }
+    .header-home .open-search path{
+        stroke: #fff;
+    }
 
+    .header__search{
+        display: block;
+        position: absolute;
+        top: 100%;
+        right: 20px;
+        padding: 10px 12px;
+        background-color: #fff;
+        box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+        border-radius: 20px;
+        max-width: calc(100vw - 40px);
+        opacity: 0;
+        pointer-events: none;
+        transition: all .3s;
+    }
+
+    .header__search._open{
+        opacity: 1;
+        pointer-events: unset;
+    }
+
+    .header__search .search-btn{
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .header__search input{
+        border-radius: 15px;
+    }
+
+    .header__search-close{
+        position: absolute;
+        display: block;
+        width: 15px;
+        right: 12px;
+        bottom: 100%;
+        margin-bottom: 8px;
+        background-color: transparent;
+    }
+
+    .header__search-close img{
+        width: 100%;
+        display: block;
+    }
 }
 @media (min-width: 571px){
     .menu-href ul{
