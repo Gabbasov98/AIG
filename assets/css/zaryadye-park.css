@@ -12,6 +12,8 @@
 .zaryadye-park__photo img{
     width: 100%;
     border-radius: 20px;
+    aspect-ratio: 100 / 46;
+    object-fit: cover;
 }
 .zaryadye-description{
     margin-top: 59px;
@@ -167,5 +169,7 @@
 }
 
 @media (max-width: 570px){
-
+    .zaryadye-park__photo img{
+        aspect-ratio: 100 / 69;
+    }
 }

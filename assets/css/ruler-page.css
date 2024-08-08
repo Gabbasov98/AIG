@@ -52,10 +52,13 @@
 }
 
 .ruler-vision__photo{
+    flex-shrink: 0;
     display: flex;
-    max-width: 400px;
-    width: 100%;
-    min-height: 532px;
+    width: 400px;
+    max-width: 100%;
+    aspect-ratio: 100 / 133;
+    height: 532px;
+    object-fit: cover;
     position: relative;
 }
 .ruler-vision__photo img{
