@@ -142,7 +142,7 @@ h3{
 
 .anim-newSing{
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(50px);
     transition-duration: 1.4s;
 }
 .anim-newSing.in-view{
