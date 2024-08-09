@@ -152,6 +152,8 @@ body {
     font-family: 'HelveticaNeue';
     margin: 0;
     padding: 0;
+    color: #000 !important;
+    background-color: #fff !important;
 }
 .container {
     max-width: 1320px;

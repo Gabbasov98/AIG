@@ -1,3 +1,7 @@
+a{
+    color: #081B4D;
+}
+
 .h1,
 h1{
     font-size: 42px;
@@ -819,6 +823,7 @@ h3{
     line-height: 14px;
     text-align: left;
     z-index: 1;
+    letter-spacing: .01em;
 }
 .publications__box{
     width: 33%;
