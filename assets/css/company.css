@@ -29,7 +29,7 @@
     margin-top: 60px;
     font-size: 20px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 140%;
     text-align: left;
     color: #555555;
 }
@@ -446,7 +446,6 @@
     .power-generat-text p {
         margin-top: 40px;
         font-size: 18px;
-        line-height: 24px;
     }
     .philosophy-title p, .philosophy-reflected p {
         font-size: 18px;
