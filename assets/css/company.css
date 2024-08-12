@@ -17,11 +17,12 @@
     max-width: 953px;
     width: 100%;
 }
+.h4,
 .power-generat-text h4{
     color: #081B4D;
     font-size: 28px;
     font-weight: 400;
-    line-height: 33px;
+    line-height: 35px;
     text-align: left;
 }
 .power-generat-text p{
@@ -437,9 +438,10 @@
     .power-generat-text {
         max-width: 853px;
     }
+    .h4,
     .power-generat-text h4 {
         font-size: 24px;
-        line-height: 28px;
+        line-height: 30px;
     }
     .power-generat-text p {
         margin-top: 40px;
@@ -479,9 +481,10 @@
 }
 
 @media (max-width: 1199px){
+    .h4,
     .power-generat-text h4 {
         font-size: 20px;
-        line-height: 30px;
+        line-height: 28px;
     }
     .power-generat-text p {
         font-size: 16px;

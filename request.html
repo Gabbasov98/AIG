@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="color-scheme" content="light only">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>404</title>
+    <title>Заявка</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 
-<body>
+<body class="_open-modal">
     <header>
         <div class="container">
             <div class="header__main">
@@ -118,36 +118,172 @@
 
     </header>
 
-    <section class="error404 first-section anim-style">
+    <section class="service-catalog first-section anim-style">
         <div class="container">
             <div class="bread-caps">
                 <ul>
                     <li><a href="#">Главная</a></li>
-                    <li><a>Страница не найдена</a></li>
+                    <li><a href="#">Технические расчеты</a></li>
+                    <li><a>Расчет остекления частных домов</a></li>
                 </ul>
             </div>
             <div class="first-section__top">
-                <h1>Страница не найдена</h1>
-            </div>
-            <div class="error404__grid">
-                <div class="error404__col">
-                    <div class="error404__num">404</div>
-                </div>
-                <div class="error404__col2">
-                    <div class="h1">Ошибка</div>
-                    <div class="h3">
-                        Запрашиваемая вами страница
-                        не существует, либо устарела
-                    </div>
-                    <a href="" class="back-link">
-                        <i class="icon-arrow _left"></i>
-                        <span>Вернуться на главную</span>
-                    </a>
-                </div>
+                <h1>
+                    Заявка на расчет остекления <br>
+                частных домов
+                </h1>
             </div>
         </div>
     </section>
 
+    <section class="order order--pt24 anim-style">
+        <div class="container">
+            <div class="order__grid">
+                <div class="order__col">
+                    <form action="" class="order-form">
+                        <div class="order-form__group">
+                            <div class="order-form__fields">
+                                <div class="fg fg-dynamic">
+                                    <input type="text">
+                                    <label>ФИО</label>
+                                </div>
+                                <div class="fg fg-dynamic">
+                                    <input type="email">
+                                    <label>E-mail</label>
+                                </div>
+                                <div class="fg fg-dynamic">
+                                    <input type="tel">
+                                    <label>Телефон</label>
+                                </div>
+                                <div class="fg fg-dynamic">
+                                    <input type="text">
+                                    <label>Название компании</label>
+                                </div>
+                                <div class="fg fg-dynamic">
+                                    <input type="text">
+                                    <label>Должность</label>
+                                </div>
+                                <div class="fg fg-dynamic">
+                                    <input type="text">
+                                    <label>Город</label>
+                                </div>
+                                <div class="fg fg-dynamic">
+                                    <select class="default-select">
+                                        <option selected disabled hidden></option>
+                                        <option>Крепление 1</option>
+                                        <option>Крепление 2</option>
+                                        <option>Крепление 3</option>
+                                    </select>
+                                    <label>Тип крепления</label>
+                                </div>
+                                <div class="fg fg-dynamic">
+                                    <select class="default-select">
+                                        <option selected disabled hidden></option>
+                                        <option>Назначение 1</option>
+                                        <option>Назначение 2</option>
+                                        <option>Назначение 3</option>
+                                    </select>
+                                    <label>Назначение здания/помещения</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-form__group">
+                            <div class="order-form__title">
+                                Размеры фрагментов остекления
+                            </div>
+                            <div class="multi-fields">
+                                <div class="sizes-field">
+                                    <div class="fg fg-dynamic">
+                                        <input type="text">
+                                        <label>Ширина</label>
+                                    </div>
+                                    <div class="fg fg-dynamic">
+                                        <input type="text">
+                                        <label>Длина</label>
+                                    </div>
+                                </div>
+                                <button class="multi-fields__add">
+                                    <img src="assets/img/plus.svg" alt="">
+                                    <span>Добавить фрагмент</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="order-form__group">
+                            <div class="order-form__title">
+                                Наличие остекления в нежилой зоне (бассейн, гараж,
+                                тренажерный зал и прочее)
+                            </div>
+                            <div class="radio-group">
+                                <div class="m-radio">
+                                    <input checked type="radio" name="hasGlass">
+                                    <label>Да</label>
+                                </div>
+                                <div class="m-radio">
+                                    <input type="radio" name="hasGlass">
+                                    <label>Нет</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-form__group">
+                            <div class="order-form__title">
+                                Наличие горизонтального остекления (зенитные
+                                фонари, покрытия и прочее)
+                            </div>
+                            <div class="radio-group">
+                                <div class="m-radio">
+                                    <input checked type="radio" name="hasGlass2">
+                                    <label>Да</label>
+                                </div>
+                                <div class="m-radio">
+                                    <input type="radio" name="hasGlass2">
+                                    <label>Нет</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="m-check">
+                            <input checked type="checkbox">
+                            <label>
+                                Нажимая кнопку «Отправить заявку», вы соглашаетесь
+                                c <a href="">Политикой конфиденциальности</a>
+                            </label>
+                        </div>
+                        <div class="order-form__nav">
+                            <button class="m-btn btn-blue btn-blue2">
+                                Отставить заявку
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="order__col2">
+                    <div class="spoiler-card _disable-spoiler-in-desktop">
+                        <div class="spoiler-card__show">
+                            <div class="rules-text">
+                                В отчете содержаться
+                            </div>
+                            <button class="spoiler-card__btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                    <path d="M1.26953 10.374H19.2695" stroke="#0B2057" stroke-width="1.5" stroke-linecap="round" />
+                                    <path class="_hide" d="M10.375 1.27002L10.375 19.27" stroke="#0B2057" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="spoiler-card__hidden">
+                            <div class="rules-text">
+                                <ul>
+                                    <li>Исходные данные для прочности расчета;</li>
+                                    <li>Типы и толщина стекол;</li>
+                                    <li>Типы соединительной пленки;</li>
+                                    <li>Расчет по группе предельных состояний</li>
+                                    <li>Рекомендации по компаниям</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div class="container">

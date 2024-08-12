@@ -1,0 +1,43 @@
+.order--pt24{
+    padding-top: 24px;
+}
+
+.order--pt24 .order__grid{
+    margin-top: 0;
+}
+
+.sizes-field{
+    display: grid;
+    grid-template-columns: repeat(2,calc(50% - 10px));
+    gap: 20px;
+}
+
+.radio-group{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -15px;
+}
+
+.radio-group .m-radio{
+    margin: 15px 29px 0 0;
+}
+
+.m-radio label{
+    padding-left: 27px;
+    font-size: 16px;
+    line-height: 125%;
+    color: #777;
+}
+
+.m-radio label:before{
+    width: 17px;
+    height: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-image: url(../img/radio.svg);
+}
+
+.m-radio input:checked+label::before {
+    background-size: 11px auto;
+}

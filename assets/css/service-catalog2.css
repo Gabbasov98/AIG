@@ -1,0 +1,159 @@
+.gallery-slider2{
+    margin-top: 60px;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+}
+
+.gallery-slider2 .swiper-pagination-bullet{
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+}
+
+.gallery-slider2 .swiper-pagination-bullet-active{
+    width: 42px;
+}
+
+.gallery-slider2 .swiper-button-next{
+    right: 40px;
+}
+
+.gallery-slider2 .swiper-button-prev{
+    left: 40px;
+}
+
+.gallery-slider2 .swiper-container{
+    width: calc(100% + 16px);
+}
+
+.gallery-slider2 .swiper-slide{
+    padding-right: 16px;
+}
+
+.gallery-slider2__img{
+    border-radius: 20px;
+    position: relative;
+    padding-bottom: 43%;
+}
+
+.gallery-slider2__img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.service-catalog__bottom{
+    margin-top: 58px;
+}
+
+.service-catalog__bottom .rules-text{
+    margin-top: 30px;
+    max-width: 808px;
+}
+
+.order-form__title{
+    color: #555;
+    font-size: 18px;
+    line-height: 133%;
+    font-weight: 500;
+    margin-bottom: 13px;
+}
+
+.order-form__group{
+    margin-top: 38px;
+}
+
+.order-form__group:first-child{
+    margin-top: 0;
+}
+
+.time-fields{
+    display: grid;
+    grid-template-columns: calc(100% - 160px) 142px;
+    gap: 18px;
+}
+
+.multi-fields{
+    margin-bottom: 32px;
+}
+
+.multi-fields:last-child{
+    margin-bottom: 0;
+}
+
+.multi-fields__items{
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 18px;
+}
+
+.multi-fields__hint{
+    font-size: 12px;
+    line-height: 125%;
+    padding: 4px 0 0 16px;
+    color: #999;
+}
+
+.multi-fields__add{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 130%;
+    color: #0B2059;
+    margin-top: 10px;
+    background-color: transparent;
+}
+
+.multi-fields__add:hover{
+    opacity: .9;
+}
+
+.multi-fields__add img{
+    width: 13px;
+    margin-right: 4px;
+    flex-shrink: 0;
+}
+
+
+@media (max-width: 1199px){
+    .gallery-slider2{
+        margin-top: 40px;
+    }
+
+    .service-catalog__bottom{
+        margin-top: 48px;
+    }
+
+    .service-catalog__bottom .rules-text{
+        margin-top: 16px;
+    }
+}
+
+
+@media (max-width: 768px){
+    .gallery-slider2 .swiper-button{
+        display: none;
+    }
+
+    .gallery-slider2 .swiper-pagination{
+        bottom: 13px;
+    }
+
+    .gallery-slider2 .swiper-pagination-bullet{
+        width: 5px;
+        height: 5px;
+    }
+
+    .gallery-slider2 .swiper-pagination-bullet-active{
+        width: 24px;
+    }
+
+    .gallery-slider2__img{
+        padding-bottom: 65.6%;
+    }
+}

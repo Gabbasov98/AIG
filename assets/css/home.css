@@ -31,6 +31,9 @@ h3{
     text-align: left;
     color: rgba(11, 32, 87, 1);
 }
+.h3.font1{
+    font-family: 'HelveticaNeue',sans-serif;
+}
 .tit-h1-hom{
     font-family: 'MADE Evolve Sans';
     font-size: 64px;
@@ -1232,6 +1235,7 @@ h3{
         font-size: 18px;
         line-height: 22px;
     }
+    .h3,
     h3 {
         font-size: 22px;
         line-height: 26px;
@@ -1307,6 +1311,7 @@ h3{
     .completed-projects-slider {
         /*width: 1000px;*/
     }
+    .h3,
     h3 {
         font-size: 20px;
         line-height: 24px;

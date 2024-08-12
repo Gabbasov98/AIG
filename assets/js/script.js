@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('select').styler();
+    $('select:not(.default-select)').styler();
     $(".phone").mask('+7 (999)-999-99-99');
 })
 
