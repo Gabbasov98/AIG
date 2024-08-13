@@ -98,7 +98,7 @@
                         <h3>СЕРВИСЫ</h3>
                         <ul>
                             <li><a href="#">Материалы</a></li>
-                            <li><a href="#">Консультации</a></li>
+                            <li><a href="#" data-modal="consultModal">Консультации</a></li>
                             <li><a href="#">Glass Bus</a></li>
                             <li><a href="#">Технические расчеты</a></li>
                             <li><a href="#">Сервис-каталог</a></li>
@@ -343,7 +343,7 @@
                     </ul>
                     <ul class="anim-newSing">
                         <li><a href="#">Материалы</a></li>
-                        <li><a href="#">Консультации</a></li>
+                        <li><a href="#" data-modal="consultModal">Консультации</a></li>
                         <li><a href="#">Glass Bus</a></li>
                         <li><a href="#">Технические расчеты</a></li>
                         <li><a href="#">Сервис-каталог</a></li>
@@ -357,6 +357,75 @@
         </div>
 
     </footer>
+
+    <div class="modal consult-modal" id="consultModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                    <path d="M0.625275 1.498L1.21854 0.890594L24.9929 24.1176L24.3996 24.725L0.625275 1.498Z" fill="#888888" />
+                    <path d="M0.621955 24.1176L24.3977 0.890511L24.991 1.49792L1.21522 24.725L0.621955 24.1176Z" fill="#888888" />
+                </svg>
+            </button>
+            <div class="modal__top">
+                <div class="modal__title h4">
+                    Консультации
+                </div>
+                <div class="modal__desc">
+                    Проконсультируем по любым вопросам - заполните
+                    форму ниже и наши специалисты свяжутся с Вами в
+                    ближайшее время.
+                </div>
+            </div>
+            <form action="" class="modal-form">
+                <div class="order-form__fields">
+                    <div class="fg fg-dynamic">
+                        <input type="text">
+                        <label>ФИО</label>
+                    </div>
+                    <div class="fg fg-dynamic">
+                        <input type="tel">
+                        <label>Телефон</label>
+                    </div>
+                    <div class="fg fg-dynamic">
+                        <input type="email">
+                        <label>E-mail</label>
+                    </div>
+                    <div class="fg fg-dynamic">
+                        <input type="text">
+                        <label>Город доставки</label>
+                    </div>
+                    <div class="fg fg-dynamic">
+                        <select class="default-select">
+                            <option selected hidden disabled></option>
+                            <option>Тема 1</option>
+                            <option>Тема 2</option>
+                            <option>Тема 3</option>
+                        </select>
+                        <label>Тема обращения</label>
+                    </div>
+                </div>
+                <div class="modal-form__hint">
+                    Здесь вы можете отправить заявку на расчет
+                    вашего проекта
+                </div>
+                <div class="m-check">
+                    <input checked type="checkbox">
+                    <label>
+                        Нажимая кнопку «Отправить заявку», вы соглашаетесь
+                        c <a href="">Политикой конфиденциальности</a>
+                    </label>
+                </div>
+                <div class="order-form__nav">
+                    <button class="m-btn btn-blue btn-blue2">
+                        Отправить сообщение
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
 
     <script src="assets/js/jquery-3.2.1.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>

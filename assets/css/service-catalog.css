@@ -83,6 +83,7 @@
 .fg .jq-selectbox__select,
 .fg select,
 .fg input{
+    background-color: #fff;
     width: 100%;
     height: 49px;
     border: 1px solid #E5E5E5;
@@ -288,18 +289,22 @@
     font-family: "Helvetica Neue",sans-serif;
 }
 
-.spoiler-card._open .hide{
-    opacity: 0;
+.spoiler-card._open .spoiler-card__btn svg{
+    transform: rotate(-45deg);
 }
 
 .spoiler-card .rules-text{
     margin: 0;
 }
 
-.spoiler-card__show{
-    cursor: pointer;
+.spoiler-card{
     border-top: 1px solid rgba(0,0,0,.1);
     border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.spoiler-card__show{
+    overflow: hidden;
+    cursor: pointer;
     font-weight: 500;
     padding: 18px 0;
     display: flex;
@@ -321,10 +326,12 @@
 .spoiler-card__btn svg{
     width: 100%;
     height: auto;
+    transition: all .3s;
 }
 
 .spoiler-card__hidden{
     margin-top: 20px;
+    padding-bottom: 18px;
     display: none;
 }
 
@@ -354,9 +361,12 @@
 
 
 @media (min-width: 769px){
+    .spoiler-card._disable-spoiler-in-desktop{
+        border: none;
+    }
+
     .spoiler-card._disable-spoiler-in-desktop .spoiler-card__show{
         pointer-events: none;
-        border: none;
         padding: 0;
     }
 
@@ -366,6 +376,7 @@
 
     .spoiler-card._disable-spoiler-in-desktop .spoiler-card__hidden{
         display: block !important;
+        padding-bottom: 0;
     }
 }
 
