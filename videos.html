@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="color-scheme" content="light only">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Видео</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="_open-modal">
+    <header>
+        <div class="container">
+            <div class="header__main">
+                <a href="#" class="header-logo">
+
+
+                    <img src="./assets/img/logo.svg" alt="logo">
+
+                </a>
+                <div class="header__search">
+                    <button type="button" class="header__search-close">
+                        <img src="assets/img/close2.svg" alt="">
+                    </button>
+                    <label>
+                        <input type="text" placeholder="Поиск по каталогу">
+                    </label>
+                    <button class="search-btn"><i class="icon-search-white"></i></button>
+                </div>
+                <div class="header__menu">
+                    <div class="header__fl">
+                        <ul>
+                            <li><a href="#">Видео</a></li>
+                            <li><a href="#">Команда</a></li>
+                            <li><a href="#">Карьера</a></li>
+                        </ul>
+                        <div class="open-search">
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 15.5C12.1421 15.5 15.5 12.1421 15.5 8C15.5 3.85786 12.1421 0.5 8 0.5C3.85786 0.5 0.5 3.85786 0.5 8C0.5 12.1421 3.85786 15.5 8 15.5Z" stroke="#081B4D" />
+                                <path d="M13.2578 14.257L18.9147 19.9138" stroke="#081B4D" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div class="open-menu">
+                            <small>Меню</small>
+                            <div class="open-menu-line">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-href-pages">
+                        <ul>
+                            <li><a href="#">ПРОДУКЦИЯ</a></li>
+                            <li><a href="#">БЛОГ</a></li>
+                            <li><a href="#">О КОМПАНИИ</a></li>
+                            <li><a href="#">КОНТАКТЫ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-fixed">
+            <div class="container">
+                <div class="menu-fixed__fl">
+                    <div class="menu-href">
+                        <h3>ИНФОРМАЦИЯ</h3>
+                        <ul>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Карьера</a></li>
+                            <li><a href="#">Проекты</a></li>
+                            <li><a href="#">Готовые решения</a></li>
+                            <li><a href="#">Команда</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-href">
+                        <h3>ДЛЯ КЛИЕНТОВ</h3>
+                        <ul>
+                            <li><a href="#">Архитекторам и проектировщикам</a></li>
+                            <li><a href="#">Дизайнерам</a></li>
+                            <li><a href="#">Производственным компаниям</a></li>
+                            <li><a href="#">Оконным компаниям</a></li>
+                            <li><a href="#">Частным компаниям</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-href">
+                        <h3>КАТАЛОГ</h3>
+                        <ul>
+                            <li><a href="#">Все линейки</a></li>
+                            <li><a href="#">Интерьерные</a></li>
+                            <li><a href="#">Архитектурные</a></li>
+                            <li><a href="#">Оконные</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-href">
+                        <h3>СЕРВИСЫ</h3>
+                        <ul>
+                            <li><a href="#">Материалы</a></li>
+                            <li><a href="#" data-modal="consultModal">Консультации</a></li>
+                            <li><a href="#">Glass Bus</a></li>
+                            <li><a href="#">Технические расчеты</a></li>
+                            <li><a href="#">Сервис-каталог</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-href">
+                        <h3>ДОМА/КОТТЕДЖИ</h3>
+                        <div class="houses-cottages">
+                            <img src="./assets/img/modernist.jpg" alt="image">
+                        </div>
+                        <a href="#">Готовые решения для
+                            коттеджей и частных домов </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="videos first-section anim-style">
+        <div class="container">
+            <div class="bread-caps">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a>Видео</a></li>
+                </ul>
+            </div>
+            <div class="first-section__top">
+                <h1>Видео</h1>
+            </div>
+            <div class="rules-text">
+                <p>
+                    Знакомьтесь с новостями компании, изучайте полезные материалы о продуктовых
+                    новинках, пользуйтесь рекомендациями по использованию продуктов AIG в удобном
+                    видеоформате.
+                </p>
+            </div>
+            <div class="catalog__menu anim-newSing">
+                <ul>
+                    <li class="catalog-tab-click catalog-menu-href" data-catalog="all">Все видео</li>
+                    <li class="catalog-tab-click" data-catalog="news">Новости</li>
+                    <li class="catalog-tab-click" data-catalog="edu">Обучающие видео</li>
+                    <li class="catalog-tab-click" data-catalog="product">Продукция</li>
+                    <li class="catalog-tab-click" data-catalog="project">Проекты</li>
+                    <li class="catalog-tab-click" data-catalog="house">Дома и коттеджи</li>
+                </ul>
+            </div>
+            <div class="catalog-min anim-newSing">
+                <div class="catalog-min-js" data-catalog="all">
+                    <div class="publications__flex publications__grid">
+                        <a href="https://www.youtube.com/watch?v=6rUXRORDt2g" data-fancybox class="video-card anim-newSing">
+                            <div class="video-card__top">
+                                <div class="video-card__img publications__photo">
+                                    <img src="./assets/img/video.png" alt="image">
+                                </div>
+                                <img class="video-card__play" src="assets/img/play.svg" alt="">
+                            </div>
+                            <div class="video-card__subtitle">РУБРИКА</div>
+                            <div class="video-card__title">
+                                Видео про остекление
+                            </div>
+                            <div class="video-card__bottom">
+                                <div class="video-card__desc">
+                                    Просмотров 635
+                                </div>
+                                <div class="video-card__desc video-card__desc2">
+                                    1 неделя назад
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://www.youtube.com/watch?v=6rUXRORDt2g" data-fancybox class="video-card anim-newSing">
+                            <div class="video-card__top">
+                                <div class="video-card__img publications__photo">
+                                    <img src="./assets/img/video2.png" alt="image">
+                                </div>
+                                <img class="video-card__play" src="assets/img/play.svg" alt="">
+                            </div>
+                            <div class="video-card__subtitle">РУБРИКА</div>
+                            <div class="video-card__title">
+                                Строительство загородного дома по современной методике
+                            </div>
+                            <div class="video-card__bottom">
+                                <div class="video-card__desc">
+                                    Просмотров 9483
+                                </div>
+                                <div class="video-card__desc video-card__desc2">
+                                    10 дней
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://www.youtube.com/watch?v=6rUXRORDt2g" data-fancybox class="video-card anim-newSing">
+                            <div class="video-card__top">
+                                <div class="video-card__img publications__photo">
+                                    <img src="./assets/img/video3.png" alt="image">
+                                </div>
+                                <img class="video-card__play" src="assets/img/play.svg" alt="">
+                            </div>
+                            <div class="video-card__subtitle">РУБРИКА</div>
+                            <div class="video-card__title">
+                                Виды стекла для загородных домов
+                            </div>
+                            <div class="video-card__bottom">
+                                <div class="video-card__desc">
+                                    Просмотров 7368
+                                </div>
+                                <div class="video-card__desc video-card__desc2">
+                                    1 месяц
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://www.youtube.com/watch?v=6rUXRORDt2g" data-fancybox class="video-card anim-newSing">
+                            <div class="video-card__top">
+                                <div class="video-card__img publications__photo">
+                                    <img src="./assets/img/video4.jpg" alt="image">
+                                </div>
+                                <img class="video-card__play" src="assets/img/play.svg" alt="">
+                            </div>
+                            <div class="video-card__subtitle">РУБРИКА</div>
+                            <div class="video-card__title">
+                                Видео про остекление
+                            </div>
+                            <div class="video-card__bottom">
+                                <div class="video-card__desc">
+                                    Просмотров 635
+                                </div>
+                                <div class="video-card__desc video-card__desc2">
+                                    1 неделя назад
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://www.youtube.com/watch?v=6rUXRORDt2g" data-fancybox class="video-card anim-newSing">
+                            <div class="video-card__top">
+                                <div class="video-card__img publications__photo">
+                                    <img src="./assets/img/video5.jpg" alt="image">
+                                </div>
+                                <img class="video-card__play" src="assets/img/play.svg" alt="">
+                            </div>
+                            <div class="video-card__subtitle">РУБРИКА</div>
+                            <div class="video-card__title">
+                                Строительство загородного дома по современной методике
+                            </div>
+                            <div class="video-card__bottom">
+                                <div class="video-card__desc">
+                                    Просмотров 9483
+                                </div>
+                                <div class="video-card__desc video-card__desc2">
+                                    10 дней
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://www.youtube.com/watch?v=6rUXRORDt2g" data-fancybox class="video-card anim-newSing">
+                            <div class="video-card__top">
+                                <div class="video-card__img publications__photo">
+                                    <img src="./assets/img/video6.jpg" alt="image">
+                                </div>
+                                <img class="video-card__play" src="assets/img/play.svg" alt="">
+                            </div>
+                            <div class="video-card__subtitle">РУБРИКА</div>
+                            <div class="video-card__title">
+                                Виды стекла для загородных домов
+                            </div>
+                            <div class="video-card__bottom">
+                                <div class="video-card__desc">
+                                    Просмотров 7368
+                                </div>
+                                <div class="video-card__desc video-card__desc2">
+                                    1 месяц
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://www.youtube.com/watch?v=6rUXRORDt2g" data-fancybox class="video-card anim-newSing">
+                            <div class="video-card__top">
+                                <div class="video-card__img publications__photo">
+                                    <img src="./assets/img/video7.jpg" alt="image">
+                                </div>
+                                <img class="video-card__play" src="assets/img/play.svg" alt="">
+                            </div>
+                            <div class="video-card__subtitle">РУБРИКА</div>
+                            <div class="video-card__title">
+                                Видео про остекление
+                            </div>
+                            <div class="video-card__bottom">
+                                <div class="video-card__desc">
+                                    Просмотров 635
+                                </div>
+                                <div class="video-card__desc video-card__desc2">
+                                    1 неделя назад
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://www.youtube.com/watch?v=6rUXRORDt2g" data-fancybox class="video-card anim-newSing">
+                            <div class="video-card__top">
+                                <div class="video-card__img publications__photo">
+                                    <img src="./assets/img/video8.jpg" alt="image">
+                                </div>
+                                <img class="video-card__play" src="assets/img/play.svg" alt="">
+                            </div>
+                            <div class="video-card__subtitle">РУБРИКА</div>
+                            <div class="video-card__title">
+                                Строительство загородного дома по современной методике
+                            </div>
+                            <div class="video-card__bottom">
+                                <div class="video-card__desc">
+                                    Просмотров 9483
+                                </div>
+                                <div class="video-card__desc video-card__desc2">
+                                    10 дней
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://www.youtube.com/watch?v=6rUXRORDt2g" data-fancybox class="video-card anim-newSing">
+                            <div class="video-card__top">
+                                <div class="video-card__img publications__photo">
+                                    <img src="./assets/img/video9.jpg" alt="image">
+                                </div>
+                                <img class="video-card__play" src="assets/img/play.svg" alt="">
+                            </div>
+                            <div class="video-card__subtitle">РУБРИКА</div>
+                            <div class="video-card__title">
+                                Виды стекла для загородных домов
+                            </div>
+                            <div class="video-card__bottom">
+                                <div class="video-card__desc">
+                                    Просмотров 7368
+                                </div>
+                                <div class="video-card__desc video-card__desc2">
+                                    1 месяц
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="catalog-min-js" data-catalog="news">
+                    <div class="publications__flex publications__grid">
+                        <a href="https://www.youtube.com/watch?v=6rUXRORDt2g" data-fancybox class="video-card anim-newSing">
+                            <div class="video-card__top">
+                                <div class="video-card__img publications__photo">
+                                    <img src="./assets/img/video2.png" alt="image">
+                                </div>
+                                <img class="video-card__play" src="assets/img/play.svg" alt="">
+                            </div>
+                            <div class="video-card__subtitle">РУБРИКА</div>
+                            <div class="video-card__title">
+                                Видео про остекление
+                            </div>
+                            <div class="video-card__bottom">
+                                <div class="video-card__desc">
+                                    Просмотров 635
+                                </div>
+                                <div class="video-card__desc video-card__desc2">
+                                    1 неделя назад
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="catalog-min-js" data-catalog="edu">
+                    <div class="publications__flex publications__grid">
+                        <a href="https://www.youtube.com/watch?v=6rUXRORDt2g" data-fancybox class="video-card anim-newSing">
+                            <div class="video-card__top">
+                                <div class="video-card__img publications__photo">
+                                    <img src="./assets/img/video3.png" alt="image">
+                                </div>
+                                <img class="video-card__play" src="assets/img/play.svg" alt="">
+                            </div>
+                            <div class="video-card__subtitle">РУБРИКА</div>
+                            <div class="video-card__title">
+                                Видео про остекление
+                            </div>
+                            <div class="video-card__bottom">
+                                <div class="video-card__desc">
+                                    Просмотров 635
+                                </div>
+                                <div class="video-card__desc video-card__desc2">
+                                    1 неделя назад
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="catalog-min-js" data-catalog="product">
+                    <div class="publications__flex publications__grid">
+                        <a href="https://www.youtube.com/watch?v=6rUXRORDt2g" data-fancybox class="video-card anim-newSing">
+                            <div class="video-card__top">
+                                <div class="video-card__img publications__photo">
+                                    <img src="./assets/img/video4.jpg" alt="image">
+                                </div>
+                                <img class="video-card__play" src="assets/img/play.svg" alt="">
+                            </div>
+                            <div class="video-card__subtitle">РУБРИКА</div>
+                            <div class="video-card__title">
+                                Видео про остекление
+                            </div>
+                            <div class="video-card__bottom">
+                                <div class="video-card__desc">
+                                    Просмотров 635
+                                </div>
+                                <div class="video-card__desc video-card__desc2">
+                                    1 неделя назад
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="catalog-min-js" data-catalog="project">
+                    <div class="publications__flex publications__grid">
+                        <a href="https://www.youtube.com/watch?v=6rUXRORDt2g" data-fancybox class="video-card anim-newSing">
+                            <div class="video-card__top">
+                                <div class="video-card__img publications__photo">
+                                    <img src="./assets/img/video5.jpg" alt="image">
+                                </div>
+                                <img class="video-card__play" src="assets/img/play.svg" alt="">
+                            </div>
+                            <div class="video-card__subtitle">РУБРИКА</div>
+                            <div class="video-card__title">
+                                Видео про остекление
+                            </div>
+                            <div class="video-card__bottom">
+                                <div class="video-card__desc">
+                                    Просмотров 635
+                                </div>
+                                <div class="video-card__desc video-card__desc2">
+                                    1 неделя назад
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="catalog-min-js" data-catalog="house">
+                    <div class="publications__flex publications__grid">
+                        <a href="https://www.youtube.com/watch?v=6rUXRORDt2g" data-fancybox class="video-card anim-newSing">
+                            <div class="video-card__top">
+                                <div class="video-card__img publications__photo">
+                                    <img src="./assets/img/video6.jpg" alt="image">
+                                </div>
+                                <img class="video-card__play" src="assets/img/play.svg" alt="">
+                            </div>
+                            <div class="video-card__subtitle">РУБРИКА</div>
+                            <div class="video-card__title">
+                                Видео про остекление
+                            </div>
+                            <div class="video-card__bottom">
+                                <div class="video-card__desc">
+                                    Просмотров 635
+                                </div>
+                                <div class="video-card__desc video-card__desc2">
+                                    1 неделя назад
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer__main ">
+                <a href="#" class="footer__logo anim-newSing"><img src="./assets/img/logo.svg" alt="logo"></a>
+                <div class="footer__menu">
+                    <ul class="anim-newSing">
+                        <li><a href="#">Продукция</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Проекты</a></li>
+                        <li><a href="#">Готовые решения</a></li>
+                        <li><a href="#">Дома/Коттеджи</a></li>
+                        <li><a href="#">Команда</a></li>
+                        <li><a href="#">Блог</a></li>
+                    </ul>
+                    <ul class="anim-newSing">
+                        <li><a href="#">Партнеры</a></li>
+                        <li><a href="#">Карьера</a></li>
+                        <li><a href="#">Видео</a></li>
+                        <li><a href="#">Материалы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                    <ul class="anim-newSing">
+                        <li><a href="#">Архитекторам и проектировщикам</a></li>
+                        <li><a href="#">Дизайнерам</a></li>
+                        <li><a href="#">Производственным компаниям</a></li>
+                        <li><a href="#">Оконным компаниям</a></li>
+                        <li><a href="#">Частным компаниям</a></li>
+                    </ul>
+                    <ul class="anim-newSing">
+                        <li><a href="#">Материалы</a></li>
+                        <li><a href="#" data-modal="consultModal">Консультации</a></li>
+                        <li><a href="#">Glass Bus</a></li>
+                        <li><a href="#">Технические расчеты</a></li>
+                        <li><a href="#">Сервис-каталог</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__down anim-newSing">
+                <p>© AIG Glass Russia 2024</p>
+                <a href="#">Разработка сайта LOGIC</a>
+            </div>
+        </div>
+
+    </footer>
+
+    <div class="modal consult-modal" id="consultModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                    <path d="M0.625275 1.498L1.21854 0.890594L24.9929 24.1176L24.3996 24.725L0.625275 1.498Z" fill="#888888" />
+                    <path d="M0.621955 24.1176L24.3977 0.890511L24.991 1.49792L1.21522 24.725L0.621955 24.1176Z" fill="#888888" />
+                </svg>
+            </button>
+            <div class="modal__top">
+                <div class="modal__title h4">
+                    Консультации
+                </div>
+                <div class="modal__desc">
+                    Проконсультируем по любым вопросам - заполните
+                    форму ниже и наши специалисты свяжутся с Вами в
+                    ближайшее время.
+                </div>
+            </div>
+            <form action="" class="modal-form">
+                <div class="order-form__fields">
+                    <div class="fg fg-dynamic">
+                        <input type="text">
+                        <label>ФИО</label>
+                    </div>
+                    <div class="fg fg-dynamic">
+                        <input type="tel">
+                        <label>Телефон</label>
+                    </div>
+                    <div class="fg fg-dynamic">
+                        <input type="email">
+                        <label>E-mail</label>
+                    </div>
+                    <div class="fg fg-dynamic">
+                        <input type="text">
+                        <label>Город доставки</label>
+                    </div>
+                    <div class="fg fg-dynamic">
+                        <select class="default-select">
+                            <option selected hidden disabled></option>
+                            <option>Тема 1</option>
+                            <option>Тема 2</option>
+                            <option>Тема 3</option>
+                        </select>
+                        <label>Тема обращения</label>
+                    </div>
+                </div>
+                <div class="modal-form__hint">
+                    Здесь вы можете отправить заявку на расчет
+                    вашего проекта
+                </div>
+                <div class="m-check">
+                    <input checked type="checkbox">
+                    <label>
+                        Нажимая кнопку «Отправить заявку», вы соглашаетесь
+                        c <a href="">Политикой конфиденциальности</a>
+                    </label>
+                </div>
+                <div class="order-form__nav">
+                    <button class="m-btn btn-blue btn-blue2">
+                        Отправить сообщение
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.mask.js"></script>
+    <script src="assets/js/jquery.formstyler.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/fancybox.umd.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/12-08.js"></script>
+
+
+</body>
+
+</html>
