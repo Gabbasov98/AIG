@@ -6,111 +6,67 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="color-scheme" content="light only">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>404</title>
+    <title>Блог</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 
-<body>
-    <header>
+<body class="_open-modal">
+    <header class="blog-header">
         <div class="container">
-            <div class="header__main">
-                <a href="#" class="header-logo">
-
-
-                    <img src="./assets/img/logo.svg" alt="logo">
-
-                </a>
-                <div class="header__search">
-                    <button type="button" class="header__search-close">
-                        <img src="assets/img/close2.svg" alt="">
-                    </button>
-                    <label>
-                        <input type="text" placeholder="Поиск по каталогу">
-                    </label>
-                    <button class="search-btn"><i class="icon-search-white"></i></button>
+            <div class="blog-header__inner">
+                <div class="blog-header__top">
+                    <a href="" class="blog-header__logo">
+                        <img src="assets/img/logo2.svg" alt="">
+                    </a>
                 </div>
-                <div class="header__menu">
-                    <div class="header__fl">
-                        <ul>
-                            <li><a href="#">Видео</a></li>
-                            <li><a href="#">Команда</a></li>
-                            <li><a href="#">Карьера</a></li>
-                        </ul>
-                        <div class="open-search">
-                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8 15.5C12.1421 15.5 15.5 12.1421 15.5 8C15.5 3.85786 12.1421 0.5 8 0.5C3.85786 0.5 0.5 3.85786 0.5 8C0.5 12.1421 3.85786 15.5 8 15.5Z" stroke="#081B4D" />
-                                <path d="M13.2578 14.257L18.9147 19.9138" stroke="#081B4D" stroke-linecap="round" />
-                            </svg>
-                        </div>
-                        <div class="open-menu">
-                            <small>Меню</small>
-                            <div class="open-menu-line">
-                                <span></span>
-                                <span></span>
+                <div class="blog-header__bottom _flex-between">
+                    <div class="blog-nav">
+                        <div class="blog-nav__menu">
+                            <div class="blog-nav__link">
+                                <div class="_burger">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <span>МЕНЮ</span>
+                            </div>
+                            <div class="blog-nav__dropdown">
+                                <ul class="blog-nav__items">
+                                    <li><a href="">КЕЙСЫ</a></li>
+                                    <li><a href="">ВДОХНОВЕНИЕ</a></li>
+                                    <li><a href="">ВАРИАНТЫ</a></li>
+                                    <li><a href="">ИНТЕРВЬЮ</a></li>
+                                    <li><a href="">ВОПРОСЫ И ОТВЕТЫ</a></li>
+                                </ul>
+                                <a href="" class="blog-header__back">
+                                    Вернуться на сайт
+                                </a>
                             </div>
                         </div>
+                        <a href="" class="blog-nav__link">КЕЙСЫ</a>
+                        <a href="" class="blog-nav__link blog-nav__link--active">ВДОХНОВЕНИЕ</a>
+                        <a href="" class="blog-nav__link">ВАРИАНТЫ</a>
+                        <a href="" class="blog-nav__link">ИНТЕРВЬЮ</a>
+                        <a href="" class="blog-nav__link">ВОПРОСЫ И ОТВЕТЫ</a>
                     </div>
-                    <div class="menu-href-pages">
-                        <ul>
-                            <li><a href="#">ПРОДУКЦИЯ</a></li>
-                            <li><a href="#">БЛОГ</a></li>
-                            <li><a href="#">О КОМПАНИИ</a></li>
-                            <li><a href="#">КОНТАКТЫ</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="menu-fixed">
-            <div class="container">
-                <div class="menu-fixed__fl">
-                    <div class="menu-href">
-                        <h3>ИНФОРМАЦИЯ</h3>
-                        <ul>
-                            <li><a href="#">О компании</a></li>
-                            <li><a href="#">Карьера</a></li>
-                            <li><a href="#">Проекты</a></li>
-                            <li><a href="#">Готовые решения</a></li>
-                            <li><a href="#">Команда</a></li>
-                        </ul>
-                    </div>
-                    <div class="menu-href">
-                        <h3>ДЛЯ КЛИЕНТОВ</h3>
-                        <ul>
-                            <li><a href="#">Архитекторам и проектировщикам</a></li>
-                            <li><a href="#">Дизайнерам</a></li>
-                            <li><a href="#">Производственным компаниям</a></li>
-                            <li><a href="#">Оконным компаниям</a></li>
-                            <li><a href="#">Частным компаниям</a></li>
-                        </ul>
-                    </div>
-                    <div class="menu-href">
-                        <h3>КАТАЛОГ</h3>
-                        <ul>
-                            <li><a href="#">Все линейки</a></li>
-                            <li><a href="#">Интерьерные</a></li>
-                            <li><a href="#">Архитектурные</a></li>
-                            <li><a href="#">Оконные</a></li>
-                        </ul>
-                    </div>
-                    <div class="menu-href">
-                        <h3>СЕРВИСЫ</h3>
-                        <ul>
-                            <li><a href="#">Материалы</a></li>
-                            <li><a href="#" data-modal="consultModal">Консультации</a></li>
-                            <li><a href="#">Glass Bus</a></li>
-                            <li><a href="#">Технические расчеты</a></li>
-                            <li><a href="#">Сервис-каталог</a></li>
-                        </ul>
-                    </div>
-                    <div class="menu-href">
-                        <h3>ДОМА/КОТТЕДЖИ</h3>
-                        <div class="houses-cottages">
-                            <img src="./assets/img/modernist.jpg" alt="image">
-                        </div>
-                        <a href="#">Готовые решения для
-                            коттеджей и частных домов </a>
+                    <div class="blog-header__action _flex">
+                        <form class="m-search">
+                            <div class="m-search__field">
+                                <input type="text" placeholder="Поиск">
+                                <button type="button" class="m-search__field-close _toggle-search">
+                                    <img src="assets/img/close2.svg" alt="">
+                                </button>
+                            </div>
+                            <button type="button" class="m-search__btn _toggle-search">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                    <path d="M8.6875 15.5C12.8296 15.5 16.1875 12.1421 16.1875 8C16.1875 3.85786 12.8296 0.5 8.6875 0.5C4.54536 0.5 1.1875 3.85786 1.1875 8C1.1875 12.1421 4.54536 15.5 8.6875 15.5Z" stroke="#7A95B5" />
+                                    <path d="M13.9453 14.257L19.6022 19.9138" stroke="#7A95B5" stroke-linecap="round" />
+                                </svg>
+                            </button>
+                        </form>
+                        <a href="" class="blog-header__back">
+                            Вернуться на сайт
+                        </a>
                     </div>
                 </div>
             </div>
@@ -118,32 +74,56 @@
 
     </header>
 
-    <section class="error404 first-section anim-style">
+    <section class="blog first-section anim-style">
         <div class="container">
-            <div class="bread-caps">
-                <ul>
-                    <li><a href="#">Главная</a></li>
-                    <li><a>Страница не найдена</a></li>
-                </ul>
-            </div>
             <div class="first-section__top">
-                <h1>Страница не найдена</h1>
+                <h1 class="blog__title">Поиск</h1>
             </div>
-            <div class="error404__grid">
-                <div class="error404__col">
-                    <div class="error404__num">404</div>
-                </div>
-                <div class="error404__col2">
-                    <div class="h1">Ошибка</div>
-                    <div class="h3">
-                        Запрашиваемая вами страница
-                        не существует, либо устарела
+
+            <div class="blog-search">
+                <form class="m-search">
+                    <div class="m-search__field">
+                        <input type="text" placeholder="Введите запрос">
                     </div>
-                    <a href="" class="back-link">
-                        <i class="icon-arrow _left"></i>
-                        <span>Вернуться на главную</span>
-                    </a>
+                    <button type="button" class="m-search__btn _toggle-search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                            <path d="M8.6875 15.5C12.8296 15.5 16.1875 12.1421 16.1875 8C16.1875 3.85786 12.8296 0.5 8.6875 0.5C4.54536 0.5 1.1875 3.85786 1.1875 8C1.1875 12.1421 4.54536 15.5 8.6875 15.5Z" stroke="#7A95B5" />
+                            <path d="M13.9453 14.257L19.6022 19.9138" stroke="#7A95B5" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </form>
+
+                <div class="blog-search__hint">
+                    Найдено: 2
                 </div>
+
+                <div class="blog-search__items">
+                    <div class="search-item">
+                        <a href="" class="search-item__title">
+                            Секрет искрящегося света <br>
+                        в скульптурах из <span>стекла</span> Джека Стромса
+                        </a>
+                        <div class="rules-text">
+                            Эпоха авангарда — короткий период в 1920—1930-х, когда на советских
+                            архитекторов равнялся весь мир. Я собрала 15 зданий Москвы, которые были
+                            построены в эпоху авангарда и даже спустя 100 лет смотрятся современно.
+                        </div>
+                    </div>
+                    <div class="search-item">
+                        <a href="" class="search-item__title">
+                            Виды стекла для загородных домов
+                        </a>
+                        <div class="rules-text">
+                            Проект Шухова стал символом нового времени и технологичности — Алексей
+                            Толстой написал фантастический роман «Гиперболоид инженера Гарина» под
+                            впечатлением от шуховских конструкций из <span>стекла</span>.
+                        </div>
+                    </div>
+                </div>
+
+                <a href="" class="article-bottom__back">
+                    НА ГЛАВНУЮ
+                </a>
             </div>
         </div>
     </section>
