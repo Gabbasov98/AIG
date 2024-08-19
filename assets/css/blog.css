@@ -44,13 +44,14 @@
 .blog-card__date{
     color: #AAA;
     font-feature-settings: 'lnum' 1;
+    font-family: 'MADE Evolve Sans',sans-serif;
 }
 
 .blog-card__time svg,
 .blog-card__date svg{
     width: 14px;
     height: auto;
-    margin-top: -1px;
+    margin-top: -2px;
 }
 
 .blog-card__date svg{

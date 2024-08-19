@@ -32,6 +32,7 @@
     line-height: 125%;
     color: #AAA;
     margin-right: 18px;
+    font-family: 'MADE Evolve Sans',sans-serif;
 }
 
 .article-top__share:last-child,
@@ -44,7 +45,7 @@
     width: 14px;
     flex-shrink: 0;
     margin-right: 5px;
-    margin-top: -1px;
+    margin-top: -3px;
 }
 
 .article-top__share{
@@ -53,6 +54,8 @@
     align-items: center;
     justify-content: center;
     background-color: transparent;
+    margin-right: 14px;
+    margin-top: -3px;
 }
 
 .article-top__share img{
@@ -77,11 +80,6 @@
     border-radius: 20px;
     margin-bottom: 50px;
     aspect-ratio: 100 / 35;
-}
-
-.article-top__share{
-    margin-right: 14px;
-    margin-top: -1px;
 }
 
 .article-bottom{
@@ -116,6 +114,7 @@
     letter-spacing: .1em;
     color: #081B4D;
     text-transform: uppercase;
+    font-family: 'MADE Evolve Sans',sans-serif;
 }
 
 .article-bottom__back:after{
