@@ -561,6 +561,8 @@ function Sliders() {
     sliders.forEach((slider,index) => {
         slider.setAttribute("data-slider-id",index)
 
+        let isAutoplay = slider.classList.contains("_autoplay")
+
         SlidersArray[index] = new Swiper(`.slider[data-slider-id="${index}"] .swiper-container`, {
             slidesPerView: "auto",
             spaceBetween: 0,
@@ -570,7 +572,7 @@ function Sliders() {
             observer: true,
             observeParents: true,
             observeSlideChildren: true,
-
+            autoplay: isAutoplay,
             navigation: {
                 nextEl: `.slider[data-slider-id="${index}"] .swiper-button-next`,
                 prevEl: `.slider[data-slider-id="${index}"] .swiper-button-prev`,

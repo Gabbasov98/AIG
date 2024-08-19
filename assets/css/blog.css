@@ -23,8 +23,7 @@
 .blog-card .video-card__title{
     font-size: 18px;
     line-height: 133%;
-    letter-spacing: unset;
-    max-width: 361px;
+    /*max-width: 361px;*/
 }
 
 ._flex,
@@ -44,12 +43,14 @@
 .blog-card__time,
 .blog-card__date{
     color: #AAA;
+    font-feature-settings: 'lnum' 1;
 }
 
 .blog-card__time svg,
 .blog-card__date svg{
     width: 14px;
     height: auto;
+    margin-top: -1px;
 }
 
 .blog-card__date svg{
@@ -78,6 +79,7 @@
 }
 
 .more__btn{
+    letter-spacing: .1em;
     width: calc(100% / 3 - 80px / 3);
     max-width: 100%;
     height: 64px;
@@ -95,7 +97,8 @@
 
 .more__btn:hover{
     color: #081B4D;
-    background-color: #E0E6F9;
+    background-color: #EAF0FF;
+    border-color: #EAF0FF;
 }
 
 

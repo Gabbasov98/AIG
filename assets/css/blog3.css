@@ -87,7 +87,7 @@
 }
 
 .blog-main__subtitle{
-    letter-spacing: .01em;
+    letter-spacing: .1em;
     text-transform: uppercase;
 }
 
@@ -99,6 +99,7 @@
     width: 14px;
     margin-right: 5px;
     flex-shrink: 0;
+    margin-top: -1px;
 }
 
 .blog-main__nav{
@@ -114,7 +115,7 @@
 
 .blog-main__link span{
     font-size: 14px;
-    letter-spacing: .01em;
+    letter-spacing: .1em;
 }
 
 .blog-main__link svg{
@@ -200,6 +201,7 @@
     width: 12px;
     flex-shrink: 0;
     margin-right: 5px;
+    margin-top: -1px;
 }
 
 

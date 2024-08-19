@@ -44,6 +44,7 @@
     width: 14px;
     flex-shrink: 0;
     margin-right: 5px;
+    margin-top: -1px;
 }
 
 .article-top__share{
@@ -51,6 +52,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: transparent;
 }
 
 .article-top__share img{
@@ -79,6 +81,7 @@
 
 .article-top__share{
     margin-right: 14px;
+    margin-top: -1px;
 }
 
 .article-bottom{
@@ -106,10 +109,10 @@
 
 .article-bottom__back{
     display: flex;
-    align-items: center;
+    align-items: stretch;
     margin-top: 75px;
     font-size: 14px;
-    line-height: 120%;
+    line-height: 17px;
     letter-spacing: .1em;
     color: #081B4D;
     text-transform: uppercase;
@@ -119,8 +122,8 @@
     content: '';
     flex-grow: 1;
     background-image: url(../img/back-arrow.svg);
-    height: 14px;
-    background-size: auto 100%;
+    height: 17px;
+    background-size: auto 14px;
     background-repeat: no-repeat;
     background-position: left top;
     margin-left: 11px;
