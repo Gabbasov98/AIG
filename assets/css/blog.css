@@ -197,4 +197,9 @@
     .more__btn{
         width: 100%;
     }
+
+    .blog--show-mob .blog-card{
+        opacity: 1;
+        transform: translate(0);
+    }
 }
