@@ -291,4 +291,9 @@
     .solutions__grid{
         grid-template-columns: 100%;
     }
+
+    .solution-main__img img{
+        height: auto;
+        aspect-ratio: 108 / 100;
+    }
 }

@@ -41,6 +41,7 @@
     border-radius: 5px;
     padding: 0 5px;
     display: inline-block;
+    box-decoration-break: clone;
 }
 
 .search-item .rules-text{

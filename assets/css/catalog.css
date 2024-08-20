@@ -6,7 +6,7 @@
 .bread-caps ul li {
     font-size: 14px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 25px;
     text-align: left;
 }
 
@@ -16,7 +16,7 @@
     display: inline;
     margin-left: 10px;
     word-break: break-word;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 .bread-caps ul li a{
     color: #081B4D;
@@ -44,7 +44,7 @@
     content: "|";
     position: absolute;
     left: -7px;
-    top: -7px;
+    top: -5px;
 }
 .catalog-main{
     margin-top: 26px;
