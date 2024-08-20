@@ -23,6 +23,7 @@
 .blog-card .video-card__title{
     font-size: 18px;
     line-height: 133%;
+    display: block;
     /*max-width: 361px;*/
 }
 
@@ -51,7 +52,7 @@
 .blog-card__date svg{
     width: 14px;
     height: auto;
-    margin-top: -2px;
+    margin-top: -1px;
 }
 
 .blog-card__date svg{
@@ -60,6 +61,14 @@
 
 .blog-card__time svg{
     margin-right: 5px;
+}
+
+.blog-card__share{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 .text14{
@@ -198,7 +207,7 @@
         width: 100%;
     }
 
-    .blog--show-mob .blog-card{
+    .blog--show-mob .blog-card:nth-child(1){
         opacity: 1;
         transform: translate(0);
     }
