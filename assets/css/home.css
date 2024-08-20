@@ -1545,6 +1545,10 @@ h3{
 }
 
 @media (max-width: 570px){
+    .anim-newSing:not(.in-view){
+        transform: translateY(10px);
+    }
+
     .h1,
     h1 {
         font-size: 24px;
