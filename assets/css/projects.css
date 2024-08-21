@@ -356,6 +356,7 @@
     .project-glass-sec._z-minus {
         z-index: -1;
         position: static;
+        transition: all 0s;
     }
     .project-glass-wrap .project-glass-box {
         width: 100%;
