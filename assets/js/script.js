@@ -93,11 +93,6 @@ let Visible = function(target) {
             right: window.pageXOffset + document.documentElement.clientWidth,
             bottom: window.pageYOffset + document.documentElement.clientHeight
         };
-    console.log(targetPosition.bottom)
-    console.log(windowPosition.top)
-    console.log(targetPosition.top)
-    console.log(windowPosition.bottom)
-    console.log("__")
     if (targetPosition.bottom - 10 > windowPosition.top &&
         targetPosition.top - 30 < windowPosition.bottom) {
         target.classList.add("in-view")

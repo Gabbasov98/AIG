@@ -1544,6 +1544,9 @@ h3{
     }
 }
 
+
+
+
 @media (max-width: 570px){
     .anim-newSing:not(.in-view){
         transform: translateY(20px);
