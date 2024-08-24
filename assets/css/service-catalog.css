@@ -7,6 +7,12 @@
     margin-top: 32px;
 }
 
+.service-catalog__subtitle--small{
+    font-size: 20px;
+    line-height: 140%;
+    color: #555555;
+}
+
 .service-info{
     margin-top: 74px;
     display: grid;
@@ -388,6 +394,10 @@
 
     .service-catalog__subtitle{
         margin-top: 31px;
+    }
+
+    .service-catalog__subtitle--small{
+        font-size: 16px;
     }
 
     .service-info{
